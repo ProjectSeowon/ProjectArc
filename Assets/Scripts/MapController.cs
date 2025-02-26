@@ -44,7 +44,7 @@ public class MapController : MonoBehaviour
            }
        }
        public Vector3 TileToWorld(Vector2Int tileIndex){return m_Grid.GetCellCenterWorld((Vector3Int)tileIndex);}
-
+    }
     // Update is called once per frame
     void Update()
     {
