@@ -11,10 +11,11 @@ public class Player : MonoBehaviour
         m_Map = map;
         m_TilePosition = tile;
 
+        transform.position = m_Map.TileToWorld(tile);
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         
     }

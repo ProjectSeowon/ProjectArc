@@ -252,6 +252,7 @@ GameObject:
   m_Component:
   - component: {fileID: 273711290}
   - component: {fileID: 273711289}
+  - component: {fileID: 273711291}
   m_Layer: 0
   m_Name: PlayerCharacter
   m_TagString: Untagged
@@ -302,7 +303,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: -1742657741803058533, guid: d097fb33af7613b419d8b1c56a99e295, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -329,6 +330,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &273711291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 273711288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5342008e193d0ff4da047fa5238851ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -616,6 +629,7 @@ MonoBehaviour:
   WallTiles:
   - {fileID: 11400000, guid: 94c28a5b8af8b3243ae1f7c0f45790d0, type: 2}
   - {fileID: 11400000, guid: 2c1fcb6a13a912b44826816cfee1c128, type: 2}
+  player: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
