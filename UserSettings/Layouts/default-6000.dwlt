@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1706.6667
     height: 1024
   m_ShowMode: 4
-  m_Title: Git for Unity
+  m_Title: Game
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 86
+  controlID: 40
   draggingID: 0
 --- !u!114 &3
 MonoBehaviour:
@@ -114,7 +114,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -123,14 +123,14 @@ MonoBehaviour:
     y: 675.3333
     width: 1189.3334
     height: 292.6667
-  m_MinSize: {x: 101, y: 126}
-  m_MaxSize: {x: 4001, y: 4026}
-  m_ActualView: {fileID: 18}
+  m_MinSize: {x: 231, y: 276}
+  m_MaxSize: {x: 10001, y: 10026}
+  m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
   - {fileID: 18}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -457,10 +457,10 @@ MonoBehaviour:
         treeIsCheckable: 0
         checkState: 0
       selectedNode:
-        path: Remote branches
-        label: Remote branches
-        level: 0
-        isFolder: 1
+        path: origin/main
+        label: main
+        level: 2
+        isFolder: 0
         isContainer: 0
         isCollapsed: 0
         isHidden: 0
@@ -473,10 +473,10 @@ MonoBehaviour:
     disableDelete: 1
     disableCreate: 1
     lastLocalAndRemoteBranchListChangedEvent:
-      updatedTimeString: 2025-02-26T09:49:03.688-05:00
+      updatedTimeString: 2025-02-26T11:23:06.936-05:00
       cacheType: 2
     lastCurrentBranchAndRemoteChange:
-      updatedTimeString: 2025-02-26T09:19:25.144-05:00
+      updatedTimeString: 2025-02-26T11:21:49.133-05:00
       cacheType: 1
     currentBranch:
       name: master
@@ -497,8 +497,8 @@ MonoBehaviour:
       tracking: '[None]'
   changesView:
     currentBranchHasUpdate: 1
-    currentStatusEntriesHasUpdate: 1
-    currentLocksHasUpdate: 1
+    currentStatusEntriesHasUpdate: 0
+    currentLocksHasUpdate: 0
     commitBody: 
     commitMessage: 
     currentBranch: master
@@ -572,6 +572,60 @@ MonoBehaviour:
     currentLogHasUpdate: 0
     currentTrackingStatusHasUpdate: 0
     logEntries:
+    - commitID: 9a5c5ed7adc5d67bf91678b4bd27b0f56360c6ed
+      mergeA: 
+      mergeB: 
+      authorName: ProjectSeowon
+      authorEmail: projectyuki@naver.com
+      commitEmail: projectyuki@naver.com
+      commitName: ProjectSeowon
+      summary: efasd
+      description: 
+      timeString: 2025-02-26T11:23:05.000-05:00
+      commitTimeString: 2025-02-26T11:23:05.000-05:00
+      changes:
+      - path: UserSettings\Layouts\default-6000.dwlt
+        fullPath: C:\Users\catsu\ProjectArc\UserSettings\Layouts\default-6000.dwlt
+        projectPath: UserSettings\Layouts\default-6000.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: 182cee4122b42130c3ab3badafc8b9d218232e4e
+      mergeA: 
+      mergeB: 
+      authorName: ProjectSeowon
+      authorEmail: projectyuki@naver.com
+      commitEmail: projectyuki@naver.com
+      commitName: ProjectSeowon
+      summary: aaaaaaaaaaa
+      description: 
+      timeString: 2025-02-26T10:35:25.000-05:00
+      commitTimeString: 2025-02-26T10:35:25.000-05:00
+      changes:
+      - path: Assets\Scenes\SampleScene.unity
+        fullPath: C:\Users\catsu\ProjectArc\Assets\Scenes\SampleScene.unity
+        projectPath: Assets\Scenes\SampleScene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scripts\MapController.cs
+        fullPath: C:\Users\catsu\ProjectArc\Assets\Scripts\MapController.cs
+        projectPath: Assets\Scripts\MapController.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scripts\Player.cs
+        fullPath: C:\Users\catsu\ProjectArc\Assets\Scripts\Player.cs
+        projectPath: Assets\Scripts\Player.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-6000.dwlt
+        fullPath: C:\Users\catsu\ProjectArc\UserSettings\Layouts\default-6000.dwlt
+        projectPath: UserSettings\Layouts\default-6000.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
     - commitID: 4b9eece2c184288d5f59b19e3a346997a0fc21e0
       mergeA: 
       mergeB: 
@@ -1150,14 +1204,68 @@ MonoBehaviour:
         workTreeStatus: 0
     statusAhead: 0
     lastLogChangedEvent:
-      updatedTimeString: 2025-02-26T09:19:47.254-05:00
+      updatedTimeString: 2025-02-26T11:23:07.500-05:00
       cacheType: 3
     lastTrackingStatusChangedEvent:
-      updatedTimeString: 2025-02-26T09:19:47.233-05:00
+      updatedTimeString: 2025-02-26T11:23:07.413-05:00
       cacheType: 5
     historyControl:
       scroll: {x: 0, y: 0}
       entries:
+      - commitID: 9a5c5ed7adc5d67bf91678b4bd27b0f56360c6ed
+        mergeA: 
+        mergeB: 
+        authorName: ProjectSeowon
+        authorEmail: projectyuki@naver.com
+        commitEmail: projectyuki@naver.com
+        commitName: ProjectSeowon
+        summary: efasd
+        description: 
+        timeString: 2025-02-26T11:23:05.000-05:00
+        commitTimeString: 2025-02-26T11:23:05.000-05:00
+        changes:
+        - path: UserSettings\Layouts\default-6000.dwlt
+          fullPath: C:\Users\catsu\ProjectArc\UserSettings\Layouts\default-6000.dwlt
+          projectPath: UserSettings\Layouts\default-6000.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: 182cee4122b42130c3ab3badafc8b9d218232e4e
+        mergeA: 
+        mergeB: 
+        authorName: ProjectSeowon
+        authorEmail: projectyuki@naver.com
+        commitEmail: projectyuki@naver.com
+        commitName: ProjectSeowon
+        summary: aaaaaaaaaaa
+        description: 
+        timeString: 2025-02-26T10:35:25.000-05:00
+        commitTimeString: 2025-02-26T10:35:25.000-05:00
+        changes:
+        - path: Assets\Scenes\SampleScene.unity
+          fullPath: C:\Users\catsu\ProjectArc\Assets\Scenes\SampleScene.unity
+          projectPath: Assets\Scenes\SampleScene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scripts\MapController.cs
+          fullPath: C:\Users\catsu\ProjectArc\Assets\Scripts\MapController.cs
+          projectPath: Assets\Scripts\MapController.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scripts\Player.cs
+          fullPath: C:\Users\catsu\ProjectArc\Assets\Scripts\Player.cs
+          projectPath: Assets\Scripts\Player.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-6000.dwlt
+          fullPath: C:\Users\catsu\ProjectArc\UserSettings\Layouts\default-6000.dwlt
+          projectPath: UserSettings\Layouts\default-6000.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
       - commitID: 4b9eece2c184288d5f59b19e3a346997a0fc21e0
         mergeA: 
         mergeB: 
@@ -1735,37 +1843,25 @@ MonoBehaviour:
           indexStatus: 4
           workTreeStatus: 0
       statusAhead: 0
-      selectedIndex: 3
+      selectedIndex: 0
     selectedEntry:
-      commitID: 6dcd905e70fe94db4fde51341e9b96358b4e2b15
+      commitID: 9a5c5ed7adc5d67bf91678b4bd27b0f56360c6ed
       mergeA: 
       mergeB: 
-      authorName: Ruby Rhile
+      authorName: ProjectSeowon
       authorEmail: projectyuki@naver.com
       commitEmail: projectyuki@naver.com
-      commitName: Ruby Rhile
-      summary: Initial commit
+      commitName: ProjectSeowon
+      summary: efasd
       description: 
-      timeString: 2025-02-24T09:39:58.000-05:00
-      commitTimeString: 2025-02-24T09:39:58.000-05:00
+      timeString: 2025-02-26T11:23:05.000-05:00
+      commitTimeString: 2025-02-26T11:23:05.000-05:00
       changes:
-      - path: .gitattributes
-        fullPath: C:\Users\catsu\ProjectArc\.gitattributes
-        projectPath: .gitattributes
+      - path: UserSettings\Layouts\default-6000.dwlt
+        fullPath: C:\Users\catsu\ProjectArc\UserSettings\Layouts\default-6000.dwlt
+        projectPath: UserSettings\Layouts\default-6000.dwlt
         originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: .gitignore
-        fullPath: C:\Users\catsu\ProjectArc\.gitignore
-        projectPath: .gitignore
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\.gitignore
-        fullPath: C:\Users\catsu\ProjectArc\Assets\.gitignore
-        projectPath: Assets\.gitignore
-        originalPath: 
-        indexStatus: 4
+        indexStatus: 3
         workTreeStatus: 0
     treeChanges:
       assets:
@@ -1773,11 +1869,30 @@ MonoBehaviour:
         values: []
       folders:
         keys:
-        - Assets
+        - UserSettings
+        - UserSettings\Layouts
         values:
-        - path: Assets
-          label: Assets
+        - path: UserSettings
+          label: UserSettings
           level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: UserSettings\Layouts
+          label: Layouts
+          level: 1
           isFolder: 1
           isContainer: 0
           isCollapsed: 0
@@ -1821,44 +1936,8 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: .gitattributes
-        label: .gitattributes
-        level: 0
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: .gitattributes
-          fullPath: C:\Users\catsu\ProjectArc\.gitattributes
-          projectPath: .gitattributes
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: .gitignore
-        label: .gitignore
-        level: 0
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: .gitignore
-          fullPath: C:\Users\catsu\ProjectArc\.gitignore
-          projectPath: .gitignore
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets
-        label: Assets
+      - path: UserSettings
+        label: UserSettings
         level: 0
         isFolder: 1
         isContainer: 0
@@ -1875,9 +1954,27 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Assets\.gitignore
-        label: .gitignore
+      - path: UserSettings\Layouts
+        label: Layouts
         level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: UserSettings\Layouts\default-6000.dwlt
+        label: default-6000.dwlt
+        level: 2
         isFolder: 0
         isContainer: 0
         isCollapsed: 0
@@ -1887,11 +1984,11 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets\.gitignore
-          fullPath: C:\Users\catsu\ProjectArc\Assets\.gitignore
-          projectPath: Assets\.gitignore
+          path: UserSettings\Layouts\default-6000.dwlt
+          fullPath: C:\Users\catsu\ProjectArc\UserSettings\Layouts\default-6000.dwlt
+          projectPath: UserSettings\Layouts\default-6000.dwlt
           originalPath: 
-          indexStatus: 4
+          indexStatus: 3
           workTreeStatus: 0
       selectedNode:
         path: 
@@ -1924,7 +2021,7 @@ MonoBehaviour:
       installSettingsHidden: 0
     hasRemote: 1
     lastCurrentRemoteChangedEvent:
-      updatedTimeString: 2025-02-26T09:19:25.144-05:00
+      updatedTimeString: 2025-02-26T11:21:49.133-05:00
       cacheType: 1
     newRepositoryRemoteUrl: https://github.com/ProjectSeowon/ProjectArc
     repositoryRemoteName: origin
@@ -1937,12 +2034,12 @@ MonoBehaviour:
       newGitEmail: projectyuki@naver.com
       needsSaving: 0
       lastCheckUserChangedEvent:
-        updatedTimeString: 2025-02-26T09:20:06.800-05:00
+        updatedTimeString: 2025-02-26T11:23:30.239-05:00
         cacheType: 8
       configSettingsHidden: 0
     repositorySettingsHidden: 0
     generalSettingsHidden: 0
-    debugSettingsHidden: 1
+    debugSettingsHidden: 0
     uiSceneSettingsHidden: 0
     uiProjectSettingsHidden: 0
   locksView:
@@ -1970,13 +2067,13 @@ MonoBehaviour:
         gitFileStatus: 0
         lockedAt: 1 Jan 0001, 00:00
     lastCurrentRemoteChangedEvent:
-      updatedTimeString: 2025-02-26T09:19:25.144-05:00
+      updatedTimeString: 2025-02-26T11:21:49.133-05:00
       cacheType: 1
     lastLocksChangedEvent:
-      updatedTimeString: 2025-02-26T09:19:28.320-05:00
+      updatedTimeString: 0001-01-01T00:00:00.000+00:00
       cacheType: 7
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2025-02-26T09:19:47.209-05:00
+      updatedTimeString: 2025-02-26T11:23:07.401-05:00
       cacheType: 6
     lockedFiles: []
     gitStatusEntries: []
@@ -1998,7 +2095,7 @@ MonoBehaviour:
   statusAhead: 0
   statusBehind: 0
   hasItemsToCommit: 0
-  isTrackingRemoteBranch: 0
+  isTrackingRemoteBranch: 1
   currentBranchContent:
     m_Text: master
     m_Image: {fileID: 0}
@@ -2010,13 +2107,13 @@ MonoBehaviour:
     m_Tooltip: Url of the origin remote
     m_TextWithWhitespace: "https://github.com/ProjectSeowon/ProjectArc\u200B"
   lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 2025-02-26T09:19:25.144-05:00
+    updatedTimeString: 2025-02-26T11:24:08.064-05:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2025-02-26T10:35:28.274-05:00
+    updatedTimeString: 2025-02-26T11:24:08.055-05:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2025-02-26T10:35:28.252-05:00
+    updatedTimeString: 0001-01-01T00:00:00.000+00:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
@@ -2129,7 +2226,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 754
+    y: 699.3333
     width: 1188.3334
     height: 266.6667
   m_SerializedDataModeController:
@@ -2171,8 +2268,8 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 69.33331}
-    m_SelectedIDs: 48b50000
-    m_LastClickedID: 46408
+    m_SelectedIDs: 88b50000
+    m_LastClickedID: 46472
     m_ExpandedIDs: 000000003eb30000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -2228,8 +2325,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: b8b20000
-    m_LastClickedInstanceID: 45752
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c62300000aaf00002eae0000
     m_RenameOverlay:
@@ -2350,7 +2447,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 0afbffffb8b20000
+      m_ExpandedIDs: 0afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -3019,7 +3116,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 699.3333
+    y: 754
     width: 1188.3334
     height: 266.6667
   m_SerializedDataModeController:
