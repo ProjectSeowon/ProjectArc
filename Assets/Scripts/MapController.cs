@@ -14,7 +14,7 @@ public class MapController : MonoBehaviour
     public class TileData{public bool Passable;}
     private TileData[,] m_MapData;
     public Player player;
-    void Start()
+    public void Init()
     {
         m_Tilemap = GetComponentInChildren<Tilemap>();
         m_Grid = GetComponentInChildren<Grid>();
@@ -52,7 +52,6 @@ public class MapController : MonoBehaviour
                m_Tilemap.SetTile(new Vector3Int(x, y, 0), tile);
            }
        }
-       player.Spawn(this, new Vector2Int(1, 1));
     }
     public Vector3 TileToWorld(Vector2Int tileIndex){
         return m_Grid.GetCellCenterWorld((Vector3Int)tileIndex);

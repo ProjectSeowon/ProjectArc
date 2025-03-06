@@ -21,9 +21,11 @@ public class Player : MonoBehaviour
         Debug.Log("m_Map assigned successfully, calling Move...");
         Move(tile);
     }
-    public void Move(Vector2Int tile){
+    public void Move(Vector2Int tile)
+    {
+        //Debug.Log($"Moving player to tile: {tile}");
+        
         m_TilePosition = tile;
-
         transform.position = m_Map.TileToWorld(tile);
     }
     private void Start() {
@@ -35,23 +37,44 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (m_Map == null) return;
+        //Debug.Log("Update is running in Player");
+
+        if (m_Map == null) return;  // Ensure map is assigned before doing anything
 
         Vector2Int newTileTarget = m_TilePosition;
         bool hasMoved = false;
 
-        if(Keyboard.current.wKey.wasPressedThisFrame){
+        if (Keyboard.current == null)
+        {
+            Debug.LogError("Keyboard input system is not initialized!");
+            return;
+        }
+
+        if (Keyboard.current.wKey.wasPressedThisFrame)
+        {
+            //Debug.Log("W key pressed");
             newTileTarget.y += 1;
-            hasMoved = true;}
-        else if(Keyboard.current.sKey.wasPressedThisFrame){
+            hasMoved = true;
+        }
+        else if (Keyboard.current.sKey.wasPressedThisFrame)
+        {
+            //Debug.Log("S key pressed");
             newTileTarget.y -= 1;
-            hasMoved = true;}
-        else if(Keyboard.current.dKey.wasPressedThisFrame){
+            hasMoved = true;
+        }
+        else if (Keyboard.current.dKey.wasPressedThisFrame)
+        {
+            //Debug.Log("D key pressed");
             newTileTarget.x += 1;
-            hasMoved = true;}
-        else if(Keyboard.current.aKey.wasPressedThisFrame){
+            hasMoved = true;
+        }
+        else if (Keyboard.current.aKey.wasPressedThisFrame)
+        {
+            //Debug.Log("A key pressed");
             newTileTarget.x -= 1;
-            hasMoved = true;}
+            hasMoved = true;
+        }
+
         else if(Keyboard.current.upArrowKey.wasPressedThisFrame){
             newTileTarget.y += 1;
             hasMoved = true;}
@@ -70,7 +93,8 @@ public class Player : MonoBehaviour
             MapController.TileData tileData = m_Map.GetTileData(newTileTarget);
 
             if(tileData != null && tileData.Passable){
-               Move(m_TilePosition);
+                GameManager.Instance.TurnManager.Tick();
+                Move(newTileTarget);
             }
         }
         
