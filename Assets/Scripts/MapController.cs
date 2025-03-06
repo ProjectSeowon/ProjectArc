@@ -16,6 +16,7 @@ public class MapController : MonoBehaviour
     public Player player;
     public void Init()
     {
+        
         m_Tilemap = GetComponentInChildren<Tilemap>();
         m_Grid = GetComponentInChildren<Grid>();
         

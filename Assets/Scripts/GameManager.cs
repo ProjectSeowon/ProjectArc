@@ -25,9 +25,10 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         TurnManager = new TurnManager();
-
+        
         MapController.Init();
         Player.Spawn(MapController, new Vector2Int(1, 1));
+        MapController.player = Player;
     }
 
     // Update is called once per frame
