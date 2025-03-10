@@ -1,5 +1,6 @@
 using System.ComponentModel;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,6 +9,9 @@ public class GameManager : MonoBehaviour
     public MapController MapController;
     public Player Player;
     private int m_Food = 100;
+
+    public UIDocument UIDoc;
+    private Label m_FoodLabel;
 
     public TurnManager TurnManager {get; private set;}
 
@@ -44,13 +48,16 @@ public class GameManager : MonoBehaviour
             return;
         }
 
-        
+        m_FoodLabel = UIDoc.rootVisualElement.Q<Label>("FoodLabel");
+        m_FoodLabel.text = "Food: " + m_Food;
+
         Player.Spawn(MapController, new Vector2Int(1, 1));
         MapController.player = Player;
     }
     void OnTurn()
     {
         m_Food -= 1;
+        m_FoodLabel.text = "Food: " + m_Food;
         Debug.Log("Current amount of food : " + m_Food);
     }
 

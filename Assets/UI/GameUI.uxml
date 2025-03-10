@@ -1,0 +1,3 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:Label text="Label" name="FoodLabel" style="-unity-font-definition: url(&quot;project://database/Assets/UI%20Toolkit/UnityThemes/slkscr.ttf?fileID=12800000&amp;guid=0473cdd7adadbb24393161e9f4e6faa6&amp;type=3#slkscr&quot;); font-size: 10px; color: rgb(255, 255, 255); -unity-text-align: upper-center; width: 342px;" />
+</engine:UXML>
