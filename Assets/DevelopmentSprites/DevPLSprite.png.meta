@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: d097fb33af7613b419d8b1c56a99e295
+guid: 6a437f2c90e1320418f14827a9f84ed3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1742657741803058533
-    second: DevPLSprite_0
-  - first:
-      213: 3284701032836456818
-    second: DevPLSprite_1
-  - first:
-      213: 3285785655465474585
-    second: DevPLSprite_2
-  - first:
-      213: 197259909127877695
-    second: DevPLSprite_3
+      213: -3337038689812066966
+    second: pixil-frame-0_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,57 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DevPLSprite_0
+      name: pixil-frame-0_0
       rect:
         serializedVersion: 2
-        x: 21
-        y: 71
-        width: 18
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b9a8ebe4406d0d7e0800000000000000
-      internalID: -1742657741803058533
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DevPLSprite_1
-      rect:
-        serializedVersion: 2
-        x: 52
-        y: 60
-        width: 32
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 271639faf2a959d20800000000000000
-      internalID: 3284701032836456818
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DevPLSprite_2
-      rect:
-        serializedVersion: 2
-        x: 23
-        y: 15
+        x: 34
+        y: 11
         width: 39
-        height: 38
+        height: 77
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,30 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 91af71215a4799d20800000000000000
-      internalID: 3285785655465474585
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DevPLSprite_3
-      rect:
-        serializedVersion: 2
-        x: 62
-        y: 40
-        width: 19
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f343efb97deccb200800000000000000
-      internalID: 197259909127877695
+      spriteID: a6d4404fdf470b1d0800000000000000
+      internalID: -3337038689812066966
       vertices: []
       indices: 
       edges: []
@@ -222,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pixil-frame-0_0: -3337038689812066966
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

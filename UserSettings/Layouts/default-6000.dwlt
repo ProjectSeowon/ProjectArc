@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 98
+  controlID: 84
   draggingID: 0
 --- !u!114 &3
 MonoBehaviour:
@@ -264,7 +264,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
+  m_Name: GameView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -275,12 +275,12 @@ MonoBehaviour:
     height: 675.3333
   m_MinSize: {x: 202, y: 226}
   m_MaxSize: {x: 4002, y: 4026}
-  m_ActualView: {fileID: 17}
+  m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 17}
   - {fileID: 19}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -317,7 +317,7 @@ MonoBehaviour:
     m_SaveData: []
     m_ContainerData: []
     m_OverlaysVisible: 1
-  progressMessageClearTime: 4635.4942973
+  progressMessageClearTime: -1
   notificationClearTime: -1
   timeSinceLastRotation: -1
   currentBranchAndRemoteHasUpdate: 0
@@ -325,8 +325,8 @@ MonoBehaviour:
   currentStatusEntriesHasUpdate: 0
   repositoryProgressHasUpdate: 0
   appManagerProgressHasUpdate: 0
-  changeTab: 6
-  activeTab: 6
+  changeTab: 3
+  activeTab: 3
   initProjectView:
     hasCompletedInitialCheck: 1
     isUserDataPresent: 1
@@ -483,10 +483,10 @@ MonoBehaviour:
     disableDelete: 1
     disableCreate: 1
     lastLocalAndRemoteBranchListChangedEvent:
-      updatedTimeString: 2025-03-04T09:18:59.542-05:00
+      updatedTimeString: 2025-03-06T09:13:32.491-05:00
       cacheType: 2
     lastCurrentBranchAndRemoteChange:
-      updatedTimeString: 2025-03-04T09:18:55.231-05:00
+      updatedTimeString: 2025-03-06T09:13:26.201-05:00
       cacheType: 1
     currentBranch:
       name: master
@@ -508,8 +508,8 @@ MonoBehaviour:
     - name: origin/master
       tracking: '[None]'
   changesView:
-    currentBranchHasUpdate: 0
-    currentStatusEntriesHasUpdate: 0
+    currentBranchHasUpdate: 1
+    currentStatusEntriesHasUpdate: 1
     currentLocksHasUpdate: 0
     commitBody: 
     commitMessage: 
@@ -572,1302 +572,42 @@ MonoBehaviour:
     gitStatusEntries: []
     changedFilesText: No changed files
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 2025-03-04T10:19:14.090-05:00
+      updatedTimeString: 0001-01-01T00:00:00.000+00:00
       cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2025-03-04T10:34:31.436-05:00
+      updatedTimeString: 0001-01-01T00:00:00.000+00:00
       cacheType: 6
     lastLocksChangedEvent:
-      updatedTimeString: 2025-03-04T10:32:15.656-05:00
+      updatedTimeString: 0001-01-01T00:00:00.000+00:00
       cacheType: 7
   historyView:
     currentLogHasUpdate: 0
     currentTrackingStatusHasUpdate: 0
-    logEntries:
-    - commitID: 9a5c5ed7adc5d67bf91678b4bd27b0f56360c6ed
-      mergeA: 
-      mergeB: 
-      authorName: ProjectSeowon
-      authorEmail: projectyuki@naver.com
-      commitEmail: projectyuki@naver.com
-      commitName: ProjectSeowon
-      summary: efasd
-      description: 
-      timeString: 2025-02-26T11:23:05.000-05:00
-      commitTimeString: 2025-02-26T11:23:05.000-05:00
-      changes:
-      - path: UserSettings\Layouts\default-6000.dwlt
-        fullPath: C:\Users\catsu\ProjectArc\UserSettings\Layouts\default-6000.dwlt
-        projectPath: UserSettings\Layouts\default-6000.dwlt
-        originalPath: 
-        indexStatus: 3
-        workTreeStatus: 0
-    - commitID: 182cee4122b42130c3ab3badafc8b9d218232e4e
-      mergeA: 
-      mergeB: 
-      authorName: ProjectSeowon
-      authorEmail: projectyuki@naver.com
-      commitEmail: projectyuki@naver.com
-      commitName: ProjectSeowon
-      summary: aaaaaaaaaaa
-      description: 
-      timeString: 2025-02-26T10:35:25.000-05:00
-      commitTimeString: 2025-02-26T10:35:25.000-05:00
-      changes:
-      - path: Assets\Scenes\SampleScene.unity
-        fullPath: C:\Users\catsu\ProjectArc\Assets\Scenes\SampleScene.unity
-        projectPath: Assets\Scenes\SampleScene.unity
-        originalPath: 
-        indexStatus: 3
-        workTreeStatus: 0
-      - path: Assets\Scripts\MapController.cs
-        fullPath: C:\Users\catsu\ProjectArc\Assets\Scripts\MapController.cs
-        projectPath: Assets\Scripts\MapController.cs
-        originalPath: 
-        indexStatus: 3
-        workTreeStatus: 0
-      - path: Assets\Scripts\Player.cs
-        fullPath: C:\Users\catsu\ProjectArc\Assets\Scripts\Player.cs
-        projectPath: Assets\Scripts\Player.cs
-        originalPath: 
-        indexStatus: 3
-        workTreeStatus: 0
-      - path: UserSettings\Layouts\default-6000.dwlt
-        fullPath: C:\Users\catsu\ProjectArc\UserSettings\Layouts\default-6000.dwlt
-        projectPath: UserSettings\Layouts\default-6000.dwlt
-        originalPath: 
-        indexStatus: 3
-        workTreeStatus: 0
-    - commitID: 4b9eece2c184288d5f59b19e3a346997a0fc21e0
-      mergeA: 
-      mergeB: 
-      authorName: ProjectSeowon
-      authorEmail: projectyuki@naver.com
-      commitEmail: projectyuki@naver.com
-      commitName: ProjectSeowon
-      summary: minor
-      description: 
-      timeString: 2025-02-26T09:19:43.000-05:00
-      commitTimeString: 2025-02-26T09:19:43.000-05:00
-      changes:
-      - path: Assets\Scripts\MapController.cs
-        fullPath: C:\Users\catsu\ProjectArc\Assets\Scripts\MapController.cs
-        projectPath: Assets\Scripts\MapController.cs
-        originalPath: 
-        indexStatus: 3
-        workTreeStatus: 0
-      - path: UserSettings\Layouts\default-6000.dwlt
-        fullPath: C:\Users\catsu\ProjectArc\UserSettings\Layouts\default-6000.dwlt
-        projectPath: UserSettings\Layouts\default-6000.dwlt
-        originalPath: 
-        indexStatus: 3
-        workTreeStatus: 0
-    - commitID: 47830a1f5cf450ba0e4e54152e98a5baafb555c5
-      mergeA: 
-      mergeB: 
-      authorName: ProjectSeowon
-      authorEmail: projectyuki@naver.com
-      commitEmail: projectyuki@naver.com
-      commitName: ProjectSeowon
-      summary: Scene Changes
-      description: 
-      timeString: 2025-02-24T11:09:49.000-05:00
-      commitTimeString: 2025-02-24T11:09:49.000-05:00
-      changes:
-      - path: Assets\Scenes\SampleScene.unity
-        fullPath: C:\Users\catsu\ProjectArc\Assets\Scenes\SampleScene.unity
-        projectPath: Assets\Scenes\SampleScene.unity
-        originalPath: 
-        indexStatus: 3
-        workTreeStatus: 0
-    - commitID: 1ebaa8c4d0116459cde5e1e8185ad8713fb81686
-      mergeA: 
-      mergeB: 
-      authorName: ProjectSeowon
-      authorEmail: projectyuki@naver.com
-      commitEmail: projectyuki@naver.com
-      commitName: ProjectSeowon
-      summary: Project Upload
-      description: 
-      timeString: 2025-02-24T11:09:25.000-05:00
-      commitTimeString: 2025-02-24T11:09:25.000-05:00
-      changes:
-      - path: .vscode\extensions.json
-        fullPath: C:\Users\catsu\ProjectArc\.vscode\extensions.json
-        projectPath: .vscode\extensions.json
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: .vscode\launch.json
-        fullPath: C:\Users\catsu\ProjectArc\.vscode\launch.json
-        projectPath: .vscode\launch.json
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: .vscode\settings.json
-        fullPath: C:\Users\catsu\ProjectArc\.vscode\settings.json
-        projectPath: .vscode\settings.json
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\DefaultVolumeProfile.asset
-        fullPath: C:\Users\catsu\ProjectArc\Assets\DefaultVolumeProfile.asset
-        projectPath: Assets\DefaultVolumeProfile.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\DefaultVolumeProfile.asset.meta
-        fullPath: C:\Users\catsu\ProjectArc\Assets\DefaultVolumeProfile.asset.meta
-        projectPath: Assets\DefaultVolumeProfile.asset.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\DevelopmentSprites.meta
-        fullPath: C:\Users\catsu\ProjectArc\Assets\DevelopmentSprites.meta
-        projectPath: Assets\DevelopmentSprites.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\DevelopmentSprites\DevGround1.png
-        fullPath: C:\Users\catsu\ProjectArc\Assets\DevelopmentSprites\DevGround1.png
-        projectPath: Assets\DevelopmentSprites\DevGround1.png
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\DevelopmentSprites\DevGround1.png.meta
-        fullPath: C:\Users\catsu\ProjectArc\Assets\DevelopmentSprites\DevGround1.png.meta
-        projectPath: Assets\DevelopmentSprites\DevGround1.png.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\DevelopmentSprites\DevGround1_0.asset
-        fullPath: C:\Users\catsu\ProjectArc\Assets\DevelopmentSprites\DevGround1_0.asset
-        projectPath: Assets\DevelopmentSprites\DevGround1_0.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\DevelopmentSprites\DevGround1_0.asset.meta
-        fullPath: C:\Users\catsu\ProjectArc\Assets\DevelopmentSprites\DevGround1_0.asset.meta
-        projectPath: Assets\DevelopmentSprites\DevGround1_0.asset.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\DevelopmentSprites\DevGround2.png
-        fullPath: C:\Users\catsu\ProjectArc\Assets\DevelopmentSprites\DevGround2.png
-        projectPath: Assets\DevelopmentSprites\DevGround2.png
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\DevelopmentSprites\DevGround2.png.meta
-        fullPath: C:\Users\catsu\ProjectArc\Assets\DevelopmentSprites\DevGround2.png.meta
-        projectPath: Assets\DevelopmentSprites\DevGround2.png.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\DevelopmentSprites\DevGround2_0.asset
-        fullPath: C:\Users\catsu\ProjectArc\Assets\DevelopmentSprites\DevGround2_0.asset
-        projectPath: Assets\DevelopmentSprites\DevGround2_0.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\DevelopmentSprites\DevGround2_0.asset.meta
-        fullPath: C:\Users\catsu\ProjectArc\Assets\DevelopmentSprites\DevGround2_0.asset.meta
-        projectPath: Assets\DevelopmentSprites\DevGround2_0.asset.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\DevelopmentSprites\DevPLSprite.png
-        fullPath: C:\Users\catsu\ProjectArc\Assets\DevelopmentSprites\DevPLSprite.png
-        projectPath: Assets\DevelopmentSprites\DevPLSprite.png
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\DevelopmentSprites\DevPLSprite.png.meta
-        fullPath: C:\Users\catsu\ProjectArc\Assets\DevelopmentSprites\DevPLSprite.png.meta
-        projectPath: Assets\DevelopmentSprites\DevPLSprite.png.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\DevelopmentSprites\DevWall1.png
-        fullPath: C:\Users\catsu\ProjectArc\Assets\DevelopmentSprites\DevWall1.png
-        projectPath: Assets\DevelopmentSprites\DevWall1.png
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\DevelopmentSprites\DevWall1.png.meta
-        fullPath: C:\Users\catsu\ProjectArc\Assets\DevelopmentSprites\DevWall1.png.meta
-        projectPath: Assets\DevelopmentSprites\DevWall1.png.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\DevelopmentSprites\DevWall1_0.asset
-        fullPath: C:\Users\catsu\ProjectArc\Assets\DevelopmentSprites\DevWall1_0.asset
-        projectPath: Assets\DevelopmentSprites\DevWall1_0.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\DevelopmentSprites\DevWall1_0.asset.meta
-        fullPath: C:\Users\catsu\ProjectArc\Assets\DevelopmentSprites\DevWall1_0.asset.meta
-        projectPath: Assets\DevelopmentSprites\DevWall1_0.asset.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\DevelopmentSprites\DevWall2.png
-        fullPath: C:\Users\catsu\ProjectArc\Assets\DevelopmentSprites\DevWall2.png
-        projectPath: Assets\DevelopmentSprites\DevWall2.png
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\DevelopmentSprites\DevWall2.png.meta
-        fullPath: C:\Users\catsu\ProjectArc\Assets\DevelopmentSprites\DevWall2.png.meta
-        projectPath: Assets\DevelopmentSprites\DevWall2.png.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\DevelopmentSprites\DevWall2_0.asset
-        fullPath: C:\Users\catsu\ProjectArc\Assets\DevelopmentSprites\DevWall2_0.asset
-        projectPath: Assets\DevelopmentSprites\DevWall2_0.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\DevelopmentSprites\DevWall2_0.asset.meta
-        fullPath: C:\Users\catsu\ProjectArc\Assets\DevelopmentSprites\DevWall2_0.asset.meta
-        projectPath: Assets\DevelopmentSprites\DevWall2_0.asset.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\InputSystem_Actions.inputactions
-        fullPath: C:\Users\catsu\ProjectArc\Assets\InputSystem_Actions.inputactions
-        projectPath: Assets\InputSystem_Actions.inputactions
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\InputSystem_Actions.inputactions.meta
-        fullPath: C:\Users\catsu\ProjectArc\Assets\InputSystem_Actions.inputactions.meta
-        projectPath: Assets\InputSystem_Actions.inputactions.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Map.meta
-        fullPath: C:\Users\catsu\ProjectArc\Assets\Map.meta
-        projectPath: Assets\Map.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Map\Maptiles.prefab
-        fullPath: C:\Users\catsu\ProjectArc\Assets\Map\Maptiles.prefab
-        projectPath: Assets\Map\Maptiles.prefab
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Map\Maptiles.prefab.meta
-        fullPath: C:\Users\catsu\ProjectArc\Assets\Map\Maptiles.prefab.meta
-        projectPath: Assets\Map\Maptiles.prefab.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Scenes.meta
-        fullPath: C:\Users\catsu\ProjectArc\Assets\Scenes.meta
-        projectPath: Assets\Scenes.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Scenes\SampleScene.unity
-        fullPath: C:\Users\catsu\ProjectArc\Assets\Scenes\SampleScene.unity
-        projectPath: Assets\Scenes\SampleScene.unity
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Scenes\SampleScene.unity.meta
-        fullPath: C:\Users\catsu\ProjectArc\Assets\Scenes\SampleScene.unity.meta
-        projectPath: Assets\Scenes\SampleScene.unity.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Scripts.meta
-        fullPath: C:\Users\catsu\ProjectArc\Assets\Scripts.meta
-        projectPath: Assets\Scripts.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Scripts\MapController.cs
-        fullPath: C:\Users\catsu\ProjectArc\Assets\Scripts\MapController.cs
-        projectPath: Assets\Scripts\MapController.cs
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Scripts\MapController.cs.meta
-        fullPath: C:\Users\catsu\ProjectArc\Assets\Scripts\MapController.cs.meta
-        projectPath: Assets\Scripts\MapController.cs.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Scripts\Player.cs
-        fullPath: C:\Users\catsu\ProjectArc\Assets\Scripts\Player.cs
-        projectPath: Assets\Scripts\Player.cs
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Scripts\Player.cs.meta
-        fullPath: C:\Users\catsu\ProjectArc\Assets\Scripts\Player.cs.meta
-        projectPath: Assets\Scripts\Player.cs.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Settings.meta
-        fullPath: C:\Users\catsu\ProjectArc\Assets\Settings.meta
-        projectPath: Assets\Settings.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Settings\Lit2DSceneTemplate.scenetemplate
-        fullPath: C:\Users\catsu\ProjectArc\Assets\Settings\Lit2DSceneTemplate.scenetemplate
-        projectPath: Assets\Settings\Lit2DSceneTemplate.scenetemplate
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Settings\Lit2DSceneTemplate.scenetemplate.meta
-        fullPath: C:\Users\catsu\ProjectArc\Assets\Settings\Lit2DSceneTemplate.scenetemplate.meta
-        projectPath: Assets\Settings\Lit2DSceneTemplate.scenetemplate.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Settings\Renderer2D.asset
-        fullPath: C:\Users\catsu\ProjectArc\Assets\Settings\Renderer2D.asset
-        projectPath: Assets\Settings\Renderer2D.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Settings\Renderer2D.asset.meta
-        fullPath: C:\Users\catsu\ProjectArc\Assets\Settings\Renderer2D.asset.meta
-        projectPath: Assets\Settings\Renderer2D.asset.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Settings\Scenes.meta
-        fullPath: C:\Users\catsu\ProjectArc\Assets\Settings\Scenes.meta
-        projectPath: Assets\Settings\Scenes.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Settings\Scenes\URP2DSceneTemplate.unity
-        fullPath: C:\Users\catsu\ProjectArc\Assets\Settings\Scenes\URP2DSceneTemplate.unity
-        projectPath: Assets\Settings\Scenes\URP2DSceneTemplate.unity
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Settings\Scenes\URP2DSceneTemplate.unity.meta
-        fullPath: C:\Users\catsu\ProjectArc\Assets\Settings\Scenes\URP2DSceneTemplate.unity.meta
-        projectPath: Assets\Settings\Scenes\URP2DSceneTemplate.unity.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Settings\UniversalRP.asset
-        fullPath: C:\Users\catsu\ProjectArc\Assets\Settings\UniversalRP.asset
-        projectPath: Assets\Settings\UniversalRP.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Settings\UniversalRP.asset.meta
-        fullPath: C:\Users\catsu\ProjectArc\Assets\Settings\UniversalRP.asset.meta
-        projectPath: Assets\Settings\UniversalRP.asset.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Sprites.meta
-        fullPath: C:\Users\catsu\ProjectArc\Assets\Sprites.meta
-        projectPath: Assets\Sprites.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\UniversalRenderPipelineGlobalSettings.asset
-        fullPath: C:\Users\catsu\ProjectArc\Assets\UniversalRenderPipelineGlobalSettings.asset
-        projectPath: Assets\UniversalRenderPipelineGlobalSettings.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\UniversalRenderPipelineGlobalSettings.asset.meta
-        fullPath: C:\Users\catsu\ProjectArc\Assets\UniversalRenderPipelineGlobalSettings.asset.meta
-        projectPath: Assets\UniversalRenderPipelineGlobalSettings.asset.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Packages\manifest.json
-        fullPath: C:\Users\catsu\ProjectArc\Packages\manifest.json
-        projectPath: Packages\manifest.json
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Packages\packages-lock.json
-        fullPath: C:\Users\catsu\ProjectArc\Packages\packages-lock.json
-        projectPath: Packages\packages-lock.json
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\AudioManager.asset
-        fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\AudioManager.asset
-        projectPath: ProjectSettings\AudioManager.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\ClusterInputManager.asset
-        fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\ClusterInputManager.asset
-        projectPath: ProjectSettings\ClusterInputManager.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\DynamicsManager.asset
-        fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\DynamicsManager.asset
-        projectPath: ProjectSettings\DynamicsManager.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\EditorBuildSettings.asset
-        fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\EditorBuildSettings.asset
-        projectPath: ProjectSettings\EditorBuildSettings.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\EditorSettings.asset
-        fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\EditorSettings.asset
-        projectPath: ProjectSettings\EditorSettings.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\GraphicsSettings.asset
-        fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\GraphicsSettings.asset
-        projectPath: ProjectSettings\GraphicsSettings.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\InputManager.asset
-        fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\InputManager.asset
-        projectPath: ProjectSettings\InputManager.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\MemorySettings.asset
-        fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\MemorySettings.asset
-        projectPath: ProjectSettings\MemorySettings.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\MultiplayerManager.asset
-        fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\MultiplayerManager.asset
-        projectPath: ProjectSettings\MultiplayerManager.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\NavMeshAreas.asset
-        fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\NavMeshAreas.asset
-        projectPath: ProjectSettings\NavMeshAreas.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\NetworkManager.asset
-        fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\NetworkManager.asset
-        projectPath: ProjectSettings\NetworkManager.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\PackageManagerSettings.asset
-        fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\PackageManagerSettings.asset
-        projectPath: ProjectSettings\PackageManagerSettings.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\Physics2DSettings.asset
-        fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\Physics2DSettings.asset
-        projectPath: ProjectSettings\Physics2DSettings.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\PresetManager.asset
-        fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\PresetManager.asset
-        projectPath: ProjectSettings\PresetManager.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\ProjectSettings.asset
-        fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\ProjectSettings.asset
-        projectPath: ProjectSettings\ProjectSettings.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\ProjectVersion.txt
-        fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\ProjectVersion.txt
-        projectPath: ProjectSettings\ProjectVersion.txt
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\QualitySettings.asset
-        fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\QualitySettings.asset
-        projectPath: ProjectSettings\QualitySettings.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\SceneTemplateSettings.json
-        fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\SceneTemplateSettings.json
-        projectPath: ProjectSettings\SceneTemplateSettings.json
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\ShaderGraphSettings.asset
-        fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\ShaderGraphSettings.asset
-        projectPath: ProjectSettings\ShaderGraphSettings.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\TagManager.asset
-        fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\TagManager.asset
-        projectPath: ProjectSettings\TagManager.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\TimeManager.asset
-        fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\TimeManager.asset
-        projectPath: ProjectSettings\TimeManager.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\URPProjectSettings.asset
-        fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\URPProjectSettings.asset
-        projectPath: ProjectSettings\URPProjectSettings.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\UnityConnectSettings.asset
-        fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\UnityConnectSettings.asset
-        projectPath: ProjectSettings\UnityConnectSettings.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\VFXManager.asset
-        fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\VFXManager.asset
-        projectPath: ProjectSettings\VFXManager.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\VersionControlSettings.asset
-        fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\VersionControlSettings.asset
-        projectPath: ProjectSettings\VersionControlSettings.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: ProjectSettings\XRSettings.asset
-        fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\XRSettings.asset
-        projectPath: ProjectSettings\XRSettings.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: UserSettings\EditorUserSettings.asset
-        fullPath: C:\Users\catsu\ProjectArc\UserSettings\EditorUserSettings.asset
-        projectPath: UserSettings\EditorUserSettings.asset
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: UserSettings\Layouts\default-6000.dwlt
-        fullPath: C:\Users\catsu\ProjectArc\UserSettings\Layouts\default-6000.dwlt
-        projectPath: UserSettings\Layouts\default-6000.dwlt
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: UserSettings\Search.index
-        fullPath: C:\Users\catsu\ProjectArc\UserSettings\Search.index
-        projectPath: UserSettings\Search.index
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: UserSettings\Search.settings
-        fullPath: C:\Users\catsu\ProjectArc\UserSettings\Search.settings
-        projectPath: UserSettings\Search.settings
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-    - commitID: 6dcd905e70fe94db4fde51341e9b96358b4e2b15
-      mergeA: 
-      mergeB: 
-      authorName: Ruby Rhile
-      authorEmail: projectyuki@naver.com
-      commitEmail: projectyuki@naver.com
-      commitName: Ruby Rhile
-      summary: Initial commit
-      description: 
-      timeString: 2025-02-24T09:39:58.000-05:00
-      commitTimeString: 2025-02-24T09:39:58.000-05:00
-      changes:
-      - path: .gitattributes
-        fullPath: C:\Users\catsu\ProjectArc\.gitattributes
-        projectPath: .gitattributes
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: .gitignore
-        fullPath: C:\Users\catsu\ProjectArc\.gitignore
-        projectPath: .gitignore
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\.gitignore
-        fullPath: C:\Users\catsu\ProjectArc\Assets\.gitignore
-        projectPath: Assets\.gitignore
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
+    logEntries: []
     statusAhead: 0
     lastLogChangedEvent:
-      updatedTimeString: 2025-03-04T09:18:59.646-05:00
+      updatedTimeString: 0001-01-01T00:00:00.000+00:00
       cacheType: 3
     lastTrackingStatusChangedEvent:
-      updatedTimeString: 2025-03-04T09:19:40.594-05:00
+      updatedTimeString: 0001-01-01T00:00:00.000+00:00
       cacheType: 5
     historyControl:
       scroll: {x: 0, y: 0}
-      entries:
-      - commitID: 9a5c5ed7adc5d67bf91678b4bd27b0f56360c6ed
-        mergeA: 
-        mergeB: 
-        authorName: ProjectSeowon
-        authorEmail: projectyuki@naver.com
-        commitEmail: projectyuki@naver.com
-        commitName: ProjectSeowon
-        summary: efasd
-        description: 
-        timeString: 2025-02-26T11:23:05.000-05:00
-        commitTimeString: 2025-02-26T11:23:05.000-05:00
-        changes:
-        - path: UserSettings\Layouts\default-6000.dwlt
-          fullPath: C:\Users\catsu\ProjectArc\UserSettings\Layouts\default-6000.dwlt
-          projectPath: UserSettings\Layouts\default-6000.dwlt
-          originalPath: 
-          indexStatus: 3
-          workTreeStatus: 0
-      - commitID: 182cee4122b42130c3ab3badafc8b9d218232e4e
-        mergeA: 
-        mergeB: 
-        authorName: ProjectSeowon
-        authorEmail: projectyuki@naver.com
-        commitEmail: projectyuki@naver.com
-        commitName: ProjectSeowon
-        summary: aaaaaaaaaaa
-        description: 
-        timeString: 2025-02-26T10:35:25.000-05:00
-        commitTimeString: 2025-02-26T10:35:25.000-05:00
-        changes:
-        - path: Assets\Scenes\SampleScene.unity
-          fullPath: C:\Users\catsu\ProjectArc\Assets\Scenes\SampleScene.unity
-          projectPath: Assets\Scenes\SampleScene.unity
-          originalPath: 
-          indexStatus: 3
-          workTreeStatus: 0
-        - path: Assets\Scripts\MapController.cs
-          fullPath: C:\Users\catsu\ProjectArc\Assets\Scripts\MapController.cs
-          projectPath: Assets\Scripts\MapController.cs
-          originalPath: 
-          indexStatus: 3
-          workTreeStatus: 0
-        - path: Assets\Scripts\Player.cs
-          fullPath: C:\Users\catsu\ProjectArc\Assets\Scripts\Player.cs
-          projectPath: Assets\Scripts\Player.cs
-          originalPath: 
-          indexStatus: 3
-          workTreeStatus: 0
-        - path: UserSettings\Layouts\default-6000.dwlt
-          fullPath: C:\Users\catsu\ProjectArc\UserSettings\Layouts\default-6000.dwlt
-          projectPath: UserSettings\Layouts\default-6000.dwlt
-          originalPath: 
-          indexStatus: 3
-          workTreeStatus: 0
-      - commitID: 4b9eece2c184288d5f59b19e3a346997a0fc21e0
-        mergeA: 
-        mergeB: 
-        authorName: ProjectSeowon
-        authorEmail: projectyuki@naver.com
-        commitEmail: projectyuki@naver.com
-        commitName: ProjectSeowon
-        summary: minor
-        description: 
-        timeString: 2025-02-26T09:19:43.000-05:00
-        commitTimeString: 2025-02-26T09:19:43.000-05:00
-        changes:
-        - path: Assets\Scripts\MapController.cs
-          fullPath: C:\Users\catsu\ProjectArc\Assets\Scripts\MapController.cs
-          projectPath: Assets\Scripts\MapController.cs
-          originalPath: 
-          indexStatus: 3
-          workTreeStatus: 0
-        - path: UserSettings\Layouts\default-6000.dwlt
-          fullPath: C:\Users\catsu\ProjectArc\UserSettings\Layouts\default-6000.dwlt
-          projectPath: UserSettings\Layouts\default-6000.dwlt
-          originalPath: 
-          indexStatus: 3
-          workTreeStatus: 0
-      - commitID: 47830a1f5cf450ba0e4e54152e98a5baafb555c5
-        mergeA: 
-        mergeB: 
-        authorName: ProjectSeowon
-        authorEmail: projectyuki@naver.com
-        commitEmail: projectyuki@naver.com
-        commitName: ProjectSeowon
-        summary: Scene Changes
-        description: 
-        timeString: 2025-02-24T11:09:49.000-05:00
-        commitTimeString: 2025-02-24T11:09:49.000-05:00
-        changes:
-        - path: Assets\Scenes\SampleScene.unity
-          fullPath: C:\Users\catsu\ProjectArc\Assets\Scenes\SampleScene.unity
-          projectPath: Assets\Scenes\SampleScene.unity
-          originalPath: 
-          indexStatus: 3
-          workTreeStatus: 0
-      - commitID: 1ebaa8c4d0116459cde5e1e8185ad8713fb81686
-        mergeA: 
-        mergeB: 
-        authorName: ProjectSeowon
-        authorEmail: projectyuki@naver.com
-        commitEmail: projectyuki@naver.com
-        commitName: ProjectSeowon
-        summary: Project Upload
-        description: 
-        timeString: 2025-02-24T11:09:25.000-05:00
-        commitTimeString: 2025-02-24T11:09:25.000-05:00
-        changes:
-        - path: .vscode\extensions.json
-          fullPath: C:\Users\catsu\ProjectArc\.vscode\extensions.json
-          projectPath: .vscode\extensions.json
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: .vscode\launch.json
-          fullPath: C:\Users\catsu\ProjectArc\.vscode\launch.json
-          projectPath: .vscode\launch.json
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: .vscode\settings.json
-          fullPath: C:\Users\catsu\ProjectArc\.vscode\settings.json
-          projectPath: .vscode\settings.json
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\DefaultVolumeProfile.asset
-          fullPath: C:\Users\catsu\ProjectArc\Assets\DefaultVolumeProfile.asset
-          projectPath: Assets\DefaultVolumeProfile.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\DefaultVolumeProfile.asset.meta
-          fullPath: C:\Users\catsu\ProjectArc\Assets\DefaultVolumeProfile.asset.meta
-          projectPath: Assets\DefaultVolumeProfile.asset.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\DevelopmentSprites.meta
-          fullPath: C:\Users\catsu\ProjectArc\Assets\DevelopmentSprites.meta
-          projectPath: Assets\DevelopmentSprites.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\DevelopmentSprites\DevGround1.png
-          fullPath: C:\Users\catsu\ProjectArc\Assets\DevelopmentSprites\DevGround1.png
-          projectPath: Assets\DevelopmentSprites\DevGround1.png
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\DevelopmentSprites\DevGround1.png.meta
-          fullPath: C:\Users\catsu\ProjectArc\Assets\DevelopmentSprites\DevGround1.png.meta
-          projectPath: Assets\DevelopmentSprites\DevGround1.png.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\DevelopmentSprites\DevGround1_0.asset
-          fullPath: C:\Users\catsu\ProjectArc\Assets\DevelopmentSprites\DevGround1_0.asset
-          projectPath: Assets\DevelopmentSprites\DevGround1_0.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\DevelopmentSprites\DevGround1_0.asset.meta
-          fullPath: C:\Users\catsu\ProjectArc\Assets\DevelopmentSprites\DevGround1_0.asset.meta
-          projectPath: Assets\DevelopmentSprites\DevGround1_0.asset.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\DevelopmentSprites\DevGround2.png
-          fullPath: C:\Users\catsu\ProjectArc\Assets\DevelopmentSprites\DevGround2.png
-          projectPath: Assets\DevelopmentSprites\DevGround2.png
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\DevelopmentSprites\DevGround2.png.meta
-          fullPath: C:\Users\catsu\ProjectArc\Assets\DevelopmentSprites\DevGround2.png.meta
-          projectPath: Assets\DevelopmentSprites\DevGround2.png.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\DevelopmentSprites\DevGround2_0.asset
-          fullPath: C:\Users\catsu\ProjectArc\Assets\DevelopmentSprites\DevGround2_0.asset
-          projectPath: Assets\DevelopmentSprites\DevGround2_0.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\DevelopmentSprites\DevGround2_0.asset.meta
-          fullPath: C:\Users\catsu\ProjectArc\Assets\DevelopmentSprites\DevGround2_0.asset.meta
-          projectPath: Assets\DevelopmentSprites\DevGround2_0.asset.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\DevelopmentSprites\DevPLSprite.png
-          fullPath: C:\Users\catsu\ProjectArc\Assets\DevelopmentSprites\DevPLSprite.png
-          projectPath: Assets\DevelopmentSprites\DevPLSprite.png
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\DevelopmentSprites\DevPLSprite.png.meta
-          fullPath: C:\Users\catsu\ProjectArc\Assets\DevelopmentSprites\DevPLSprite.png.meta
-          projectPath: Assets\DevelopmentSprites\DevPLSprite.png.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\DevelopmentSprites\DevWall1.png
-          fullPath: C:\Users\catsu\ProjectArc\Assets\DevelopmentSprites\DevWall1.png
-          projectPath: Assets\DevelopmentSprites\DevWall1.png
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\DevelopmentSprites\DevWall1.png.meta
-          fullPath: C:\Users\catsu\ProjectArc\Assets\DevelopmentSprites\DevWall1.png.meta
-          projectPath: Assets\DevelopmentSprites\DevWall1.png.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\DevelopmentSprites\DevWall1_0.asset
-          fullPath: C:\Users\catsu\ProjectArc\Assets\DevelopmentSprites\DevWall1_0.asset
-          projectPath: Assets\DevelopmentSprites\DevWall1_0.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\DevelopmentSprites\DevWall1_0.asset.meta
-          fullPath: C:\Users\catsu\ProjectArc\Assets\DevelopmentSprites\DevWall1_0.asset.meta
-          projectPath: Assets\DevelopmentSprites\DevWall1_0.asset.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\DevelopmentSprites\DevWall2.png
-          fullPath: C:\Users\catsu\ProjectArc\Assets\DevelopmentSprites\DevWall2.png
-          projectPath: Assets\DevelopmentSprites\DevWall2.png
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\DevelopmentSprites\DevWall2.png.meta
-          fullPath: C:\Users\catsu\ProjectArc\Assets\DevelopmentSprites\DevWall2.png.meta
-          projectPath: Assets\DevelopmentSprites\DevWall2.png.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\DevelopmentSprites\DevWall2_0.asset
-          fullPath: C:\Users\catsu\ProjectArc\Assets\DevelopmentSprites\DevWall2_0.asset
-          projectPath: Assets\DevelopmentSprites\DevWall2_0.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\DevelopmentSprites\DevWall2_0.asset.meta
-          fullPath: C:\Users\catsu\ProjectArc\Assets\DevelopmentSprites\DevWall2_0.asset.meta
-          projectPath: Assets\DevelopmentSprites\DevWall2_0.asset.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\InputSystem_Actions.inputactions
-          fullPath: C:\Users\catsu\ProjectArc\Assets\InputSystem_Actions.inputactions
-          projectPath: Assets\InputSystem_Actions.inputactions
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\InputSystem_Actions.inputactions.meta
-          fullPath: C:\Users\catsu\ProjectArc\Assets\InputSystem_Actions.inputactions.meta
-          projectPath: Assets\InputSystem_Actions.inputactions.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Map.meta
-          fullPath: C:\Users\catsu\ProjectArc\Assets\Map.meta
-          projectPath: Assets\Map.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Map\Maptiles.prefab
-          fullPath: C:\Users\catsu\ProjectArc\Assets\Map\Maptiles.prefab
-          projectPath: Assets\Map\Maptiles.prefab
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Map\Maptiles.prefab.meta
-          fullPath: C:\Users\catsu\ProjectArc\Assets\Map\Maptiles.prefab.meta
-          projectPath: Assets\Map\Maptiles.prefab.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Scenes.meta
-          fullPath: C:\Users\catsu\ProjectArc\Assets\Scenes.meta
-          projectPath: Assets\Scenes.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Scenes\SampleScene.unity
-          fullPath: C:\Users\catsu\ProjectArc\Assets\Scenes\SampleScene.unity
-          projectPath: Assets\Scenes\SampleScene.unity
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Scenes\SampleScene.unity.meta
-          fullPath: C:\Users\catsu\ProjectArc\Assets\Scenes\SampleScene.unity.meta
-          projectPath: Assets\Scenes\SampleScene.unity.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Scripts.meta
-          fullPath: C:\Users\catsu\ProjectArc\Assets\Scripts.meta
-          projectPath: Assets\Scripts.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Scripts\MapController.cs
-          fullPath: C:\Users\catsu\ProjectArc\Assets\Scripts\MapController.cs
-          projectPath: Assets\Scripts\MapController.cs
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Scripts\MapController.cs.meta
-          fullPath: C:\Users\catsu\ProjectArc\Assets\Scripts\MapController.cs.meta
-          projectPath: Assets\Scripts\MapController.cs.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Scripts\Player.cs
-          fullPath: C:\Users\catsu\ProjectArc\Assets\Scripts\Player.cs
-          projectPath: Assets\Scripts\Player.cs
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Scripts\Player.cs.meta
-          fullPath: C:\Users\catsu\ProjectArc\Assets\Scripts\Player.cs.meta
-          projectPath: Assets\Scripts\Player.cs.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Settings.meta
-          fullPath: C:\Users\catsu\ProjectArc\Assets\Settings.meta
-          projectPath: Assets\Settings.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Settings\Lit2DSceneTemplate.scenetemplate
-          fullPath: C:\Users\catsu\ProjectArc\Assets\Settings\Lit2DSceneTemplate.scenetemplate
-          projectPath: Assets\Settings\Lit2DSceneTemplate.scenetemplate
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Settings\Lit2DSceneTemplate.scenetemplate.meta
-          fullPath: C:\Users\catsu\ProjectArc\Assets\Settings\Lit2DSceneTemplate.scenetemplate.meta
-          projectPath: Assets\Settings\Lit2DSceneTemplate.scenetemplate.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Settings\Renderer2D.asset
-          fullPath: C:\Users\catsu\ProjectArc\Assets\Settings\Renderer2D.asset
-          projectPath: Assets\Settings\Renderer2D.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Settings\Renderer2D.asset.meta
-          fullPath: C:\Users\catsu\ProjectArc\Assets\Settings\Renderer2D.asset.meta
-          projectPath: Assets\Settings\Renderer2D.asset.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Settings\Scenes.meta
-          fullPath: C:\Users\catsu\ProjectArc\Assets\Settings\Scenes.meta
-          projectPath: Assets\Settings\Scenes.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Settings\Scenes\URP2DSceneTemplate.unity
-          fullPath: C:\Users\catsu\ProjectArc\Assets\Settings\Scenes\URP2DSceneTemplate.unity
-          projectPath: Assets\Settings\Scenes\URP2DSceneTemplate.unity
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Settings\Scenes\URP2DSceneTemplate.unity.meta
-          fullPath: C:\Users\catsu\ProjectArc\Assets\Settings\Scenes\URP2DSceneTemplate.unity.meta
-          projectPath: Assets\Settings\Scenes\URP2DSceneTemplate.unity.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Settings\UniversalRP.asset
-          fullPath: C:\Users\catsu\ProjectArc\Assets\Settings\UniversalRP.asset
-          projectPath: Assets\Settings\UniversalRP.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Settings\UniversalRP.asset.meta
-          fullPath: C:\Users\catsu\ProjectArc\Assets\Settings\UniversalRP.asset.meta
-          projectPath: Assets\Settings\UniversalRP.asset.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\Sprites.meta
-          fullPath: C:\Users\catsu\ProjectArc\Assets\Sprites.meta
-          projectPath: Assets\Sprites.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\UniversalRenderPipelineGlobalSettings.asset
-          fullPath: C:\Users\catsu\ProjectArc\Assets\UniversalRenderPipelineGlobalSettings.asset
-          projectPath: Assets\UniversalRenderPipelineGlobalSettings.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\UniversalRenderPipelineGlobalSettings.asset.meta
-          fullPath: C:\Users\catsu\ProjectArc\Assets\UniversalRenderPipelineGlobalSettings.asset.meta
-          projectPath: Assets\UniversalRenderPipelineGlobalSettings.asset.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Packages\manifest.json
-          fullPath: C:\Users\catsu\ProjectArc\Packages\manifest.json
-          projectPath: Packages\manifest.json
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Packages\packages-lock.json
-          fullPath: C:\Users\catsu\ProjectArc\Packages\packages-lock.json
-          projectPath: Packages\packages-lock.json
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\AudioManager.asset
-          fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\AudioManager.asset
-          projectPath: ProjectSettings\AudioManager.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\ClusterInputManager.asset
-          fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\ClusterInputManager.asset
-          projectPath: ProjectSettings\ClusterInputManager.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\DynamicsManager.asset
-          fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\DynamicsManager.asset
-          projectPath: ProjectSettings\DynamicsManager.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\EditorBuildSettings.asset
-          fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\EditorBuildSettings.asset
-          projectPath: ProjectSettings\EditorBuildSettings.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\EditorSettings.asset
-          fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\EditorSettings.asset
-          projectPath: ProjectSettings\EditorSettings.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\GraphicsSettings.asset
-          fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\GraphicsSettings.asset
-          projectPath: ProjectSettings\GraphicsSettings.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\InputManager.asset
-          fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\InputManager.asset
-          projectPath: ProjectSettings\InputManager.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\MemorySettings.asset
-          fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\MemorySettings.asset
-          projectPath: ProjectSettings\MemorySettings.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\MultiplayerManager.asset
-          fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\MultiplayerManager.asset
-          projectPath: ProjectSettings\MultiplayerManager.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\NavMeshAreas.asset
-          fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\NavMeshAreas.asset
-          projectPath: ProjectSettings\NavMeshAreas.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\NetworkManager.asset
-          fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\NetworkManager.asset
-          projectPath: ProjectSettings\NetworkManager.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\PackageManagerSettings.asset
-          fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\PackageManagerSettings.asset
-          projectPath: ProjectSettings\PackageManagerSettings.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\Physics2DSettings.asset
-          fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\Physics2DSettings.asset
-          projectPath: ProjectSettings\Physics2DSettings.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\PresetManager.asset
-          fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\PresetManager.asset
-          projectPath: ProjectSettings\PresetManager.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\ProjectSettings.asset
-          fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\ProjectSettings.asset
-          projectPath: ProjectSettings\ProjectSettings.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\ProjectVersion.txt
-          fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\ProjectVersion.txt
-          projectPath: ProjectSettings\ProjectVersion.txt
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\QualitySettings.asset
-          fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\QualitySettings.asset
-          projectPath: ProjectSettings\QualitySettings.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\SceneTemplateSettings.json
-          fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\SceneTemplateSettings.json
-          projectPath: ProjectSettings\SceneTemplateSettings.json
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\ShaderGraphSettings.asset
-          fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\ShaderGraphSettings.asset
-          projectPath: ProjectSettings\ShaderGraphSettings.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\TagManager.asset
-          fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\TagManager.asset
-          projectPath: ProjectSettings\TagManager.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\TimeManager.asset
-          fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\TimeManager.asset
-          projectPath: ProjectSettings\TimeManager.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\URPProjectSettings.asset
-          fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\URPProjectSettings.asset
-          projectPath: ProjectSettings\URPProjectSettings.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\UnityConnectSettings.asset
-          fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\UnityConnectSettings.asset
-          projectPath: ProjectSettings\UnityConnectSettings.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\VFXManager.asset
-          fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\VFXManager.asset
-          projectPath: ProjectSettings\VFXManager.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\VersionControlSettings.asset
-          fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\VersionControlSettings.asset
-          projectPath: ProjectSettings\VersionControlSettings.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: ProjectSettings\XRSettings.asset
-          fullPath: C:\Users\catsu\ProjectArc\ProjectSettings\XRSettings.asset
-          projectPath: ProjectSettings\XRSettings.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: UserSettings\EditorUserSettings.asset
-          fullPath: C:\Users\catsu\ProjectArc\UserSettings\EditorUserSettings.asset
-          projectPath: UserSettings\EditorUserSettings.asset
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: UserSettings\Layouts\default-6000.dwlt
-          fullPath: C:\Users\catsu\ProjectArc\UserSettings\Layouts\default-6000.dwlt
-          projectPath: UserSettings\Layouts\default-6000.dwlt
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: UserSettings\Search.index
-          fullPath: C:\Users\catsu\ProjectArc\UserSettings\Search.index
-          projectPath: UserSettings\Search.index
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: UserSettings\Search.settings
-          fullPath: C:\Users\catsu\ProjectArc\UserSettings\Search.settings
-          projectPath: UserSettings\Search.settings
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - commitID: 6dcd905e70fe94db4fde51341e9b96358b4e2b15
-        mergeA: 
-        mergeB: 
-        authorName: Ruby Rhile
-        authorEmail: projectyuki@naver.com
-        commitEmail: projectyuki@naver.com
-        commitName: Ruby Rhile
-        summary: Initial commit
-        description: 
-        timeString: 2025-02-24T09:39:58.000-05:00
-        commitTimeString: 2025-02-24T09:39:58.000-05:00
-        changes:
-        - path: .gitattributes
-          fullPath: C:\Users\catsu\ProjectArc\.gitattributes
-          projectPath: .gitattributes
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: .gitignore
-          fullPath: C:\Users\catsu\ProjectArc\.gitignore
-          projectPath: .gitignore
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-        - path: Assets\.gitignore
-          fullPath: C:\Users\catsu\ProjectArc\Assets\.gitignore
-          projectPath: Assets\.gitignore
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
+      entries: []
       statusAhead: 0
-      selectedIndex: 0
+      selectedIndex: -1
     selectedEntry:
-      commitID: 9a5c5ed7adc5d67bf91678b4bd27b0f56360c6ed
+      commitID: 
       mergeA: 
       mergeB: 
-      authorName: ProjectSeowon
-      authorEmail: projectyuki@naver.com
-      commitEmail: projectyuki@naver.com
-      commitName: ProjectSeowon
-      summary: efasd
+      authorName: 
+      authorEmail: 
+      commitEmail: 
+      commitName: 
+      summary: 
       description: 
-      timeString: 2025-02-26T11:23:05.000-05:00
-      commitTimeString: 2025-02-26T11:23:05.000-05:00
+      timeString: 0001-01-01T00:00:00.000+00:00
+      commitTimeString: 0001-01-01T00:00:00.000+00:00
       changes:
       - path: UserSettings\Layouts\default-6000.dwlt
         fullPath: C:\Users\catsu\ProjectArc\UserSettings\Layouts\default-6000.dwlt
@@ -2033,7 +773,7 @@ MonoBehaviour:
       installSettingsHidden: 0
     hasRemote: 1
     lastCurrentRemoteChangedEvent:
-      updatedTimeString: 2025-03-04T09:18:55.231-05:00
+      updatedTimeString: 2025-03-06T10:13:41.552-05:00
       cacheType: 1
     newRepositoryRemoteUrl: https://github.com/ProjectSeowon/ProjectArc
     repositoryRemoteName: origin
@@ -2046,7 +786,7 @@ MonoBehaviour:
       newGitEmail: projectyuki@naver.com
       needsSaving: 0
       lastCheckUserChangedEvent:
-        updatedTimeString: 0001-01-01T00:00:00.000+00:00
+        updatedTimeString: 2025-03-06T10:26:20.358-05:00
         cacheType: 8
       configSettingsHidden: 0
     repositorySettingsHidden: 0
@@ -2056,8 +796,8 @@ MonoBehaviour:
     uiProjectSettingsHidden: 0
   locksView:
     currentRemoteHasUpdate: 1
-    currentStatusEntriesHasUpdate: 1
-    currentLocksHasUpdate: 1
+    currentStatusEntriesHasUpdate: 0
+    currentLocksHasUpdate: 0
     keychainHasUpdate: 1
     locksControl:
       scroll: {x: 0, y: 0}
@@ -2079,16 +819,22 @@ MonoBehaviour:
         gitFileStatus: 0
         lockedAt: 1 Jan 0001, 00:00
     lastCurrentRemoteChangedEvent:
-      updatedTimeString: 0001-01-01T00:00:00.000+00:00
+      updatedTimeString: 2025-03-06T09:13:26.201-05:00
       cacheType: 1
     lastLocksChangedEvent:
       updatedTimeString: 0001-01-01T00:00:00.000+00:00
       cacheType: 7
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 0001-01-01T00:00:00.000+00:00
+      updatedTimeString: 2025-03-06T09:13:26.035-05:00
       cacheType: 6
     lockedFiles: []
-    gitStatusEntries: []
+    gitStatusEntries:
+    - path: UserSettings\Layouts\default-6000.dwlt
+      fullPath: C:\Users\catsu\ProjectArc\UserSettings\Layouts\default-6000.dwlt
+      projectPath: UserSettings\Layouts\default-6000.dwlt
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
     currentUsername: 
     unlockFileMenuContent:
       m_Text: Release Lock
@@ -2104,7 +850,7 @@ MonoBehaviour:
   currentRemoteName: origin
   currentBranch: master
   currentRemoteUrl: https://github.com/ProjectSeowon/ProjectArc
-  statusAhead: 0
+  statusAhead: 1
   statusBehind: 0
   hasItemsToCommit: 0
   isTrackingRemoteBranch: 1
@@ -2119,13 +865,13 @@ MonoBehaviour:
     m_Tooltip: Url of the origin remote
     m_TextWithWhitespace: "https://github.com/ProjectSeowon/ProjectArc\u200B"
   lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 2025-03-04T10:34:58.893-05:00
+    updatedTimeString: 2025-03-06T10:29:04.874-05:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2025-03-04T10:34:59.241-05:00
+    updatedTimeString: 2025-03-06T10:35:34.217-05:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2025-03-04T10:34:31.436-05:00
+    updatedTimeString: 2025-03-06T10:35:34.104-05:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
@@ -2147,8 +893,8 @@ MonoBehaviour:
     m_Image: {fileID: 0}
     m_Tooltip: 
     m_TextWithWhitespace: "Fetch\u200B"
-  repositoryProgressValue: 1
-  repositoryProgressMessage: Pushed
+  repositoryProgressValue: 0
+  repositoryProgressMessage: 
   appManagerProgressValue: 1
   appManagerProgressMessage: 
   primaryConnectionUsername: 
@@ -2279,9 +1025,9 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 69.33331}
-    m_SelectedIDs: 1ab50000
-    m_LastClickedID: 46362
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: beb60000
+    m_LastClickedID: 46782
     m_ExpandedIDs: 000000003eb30000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -2392,7 +1138,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1189.3334
     y: 78.66667
-    width: 516.3334
+    width: 516.33325
     height: 942
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -2459,7 +1205,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 0afbffffbab20000
+      m_ExpandedIDs: 0afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -2505,8 +1251,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Scene\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 411.66666
-    y: 24
+    x: 410.6667
+    y: 78.66667
     width: 776.66675
     height: 649.3333
   m_SerializedDataModeController:
@@ -3163,8 +1909,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Game\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 410.6667
-    y: 78.66667
+    x: 411.66666
+    y: 24
     width: 776.66675
     height: 649.3333
   m_SerializedDataModeController:

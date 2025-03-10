@@ -16,9 +16,16 @@ public class MapController : MonoBehaviour
     public Player player;
     public void Init()
     {
-        
         m_Tilemap = GetComponentInChildren<Tilemap>();
         m_Grid = GetComponentInChildren<Grid>();
+        if (m_Tilemap == null || m_Grid == null)
+        {
+            Debug.LogError("Tilemap or Grid is not assigned in MapController!");
+            return;
+        }
+
+        Debug.Log("Initializing MapController...");
+        
         
         if (player == null)
         {
