@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     
     public MapController MapController;
     public Player Player;
-    private int m_Food = 100;
+    private int m_Food = 200;
 
     public UIDocument UIDoc;
     private Label m_FoodLabel;
@@ -49,16 +49,15 @@ public class GameManager : MonoBehaviour
         }
 
         m_FoodLabel = UIDoc.rootVisualElement.Q<Label>("FoodLabel");
-        m_FoodLabel.text = "Food: " + m_Food;
+        m_FoodLabel.text = "Food: " + m_Food / 2;
 
         Player.Spawn(MapController, new Vector2Int(1, 1));
         MapController.player = Player;
     }
     void OnTurn()
     {
-        m_Food -= 1;
-        m_FoodLabel.text = "Food: " + m_Food;
-        Debug.Log("Current amount of food : " + m_Food);
+        m_Food = m_Food - 1;
+        m_FoodLabel.text = "Food: " + m_Food / 2;
     }
 
     // Update is called once per frame

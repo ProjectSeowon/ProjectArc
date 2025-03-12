@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -6,12 +7,17 @@ public class MapController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private Tilemap m_Tilemap;
     private Grid m_Grid;
+    private GameObject FoodPrefab;
 
     public int Width;
     public int Height;
     public Tile[] GroundTiles;
     public Tile[] WallTiles;
-    public class TileData{public bool Passable;}
+    public class TileData
+    {
+        public bool Passable; 
+        public GameObject ContainedObject;
+    }
     private TileData[,] m_MapData;
     public Player player;
     public void Init()
@@ -70,6 +76,15 @@ public class MapController : MonoBehaviour
         }
 
         return m_MapData[tileIndex.x, tileIndex.y];
+    }
+    void GenerateFood()
+    {
+        int FoodCount = 5;
+        for(int i = 0; i < FoodCount; ++i)
+        {
+            int randX = Random.Range(1, Width - 1);
+            
+        }
     }
        
 }
