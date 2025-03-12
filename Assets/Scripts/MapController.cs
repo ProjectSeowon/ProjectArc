@@ -1,4 +1,6 @@
+using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor.PackageManager.Requests;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -7,8 +9,8 @@ public class MapController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private Tilemap m_Tilemap;
     private Grid m_Grid;
-    private GameObject FoodPrefab;
-
+    public FoodObject FoodPrefab;
+    
     public int Width;
     public int Height;
     public Tile[] GroundTiles;
@@ -16,10 +18,11 @@ public class MapController : MonoBehaviour
     public class TileData
     {
         public bool Passable; 
-        public GameObject ContainedObject;
+        public TileObject ContainedObject;
     }
     private TileData[,] m_MapData;
     public Player player;
+    private List<Vector2Int> m_EmptyTileList;
     public void Init()
     {
         m_Tilemap = GetComponentInChildren<Tilemap>();
@@ -40,7 +43,7 @@ public class MapController : MonoBehaviour
         }
 
         Debug.Log("Player reference found, calling Spawn...");
-
+        m_EmptyTileList = new List<Vector2Int>();
         m_MapData = new TileData[Width, Height];
 
         
@@ -61,11 +64,15 @@ public class MapController : MonoBehaviour
                {
                    tile = GroundTiles[Random.Range(0, GroundTiles.Length)];
                    m_MapData[x, y].Passable = true;
+
+                   m_EmptyTileList.Add(new Vector2Int(x, y));
                }
               
                m_Tilemap.SetTile(new Vector3Int(x, y, 0), tile);
            }
        }
+       m_EmptyTileList.Remove(new Vector2Int(1, 1));
+       GenerateFood();
     }
     public Vector3 TileToWorld(Vector2Int tileIndex){
         return m_Grid.GetCellCenterWorld((Vector3Int)tileIndex);
@@ -79,10 +86,15 @@ public class MapController : MonoBehaviour
     }
     void GenerateFood()
     {
-        int FoodCount = 5;
+        int FoodCount = Random.Range(1, 10);
         for(int i = 0; i < FoodCount; ++i)
         {
-            int randX = Random.Range(1, Width - 1);
+            int randIDX = Random.Range(0, m_EmptyTileList.Count);
+            Vector2Int coord = m_EmptyTileList[randIDX];
+            TileData data = m_MapData[coord.x, coord.y];
+            FoodObject newFood = Instantiate(FoodPrefab);
+            newFood.transform.position = TileToWorld(new Vector2Int(coord.x, coord.y));
+            data.ContainedObject = newFood;
             
         }
     }

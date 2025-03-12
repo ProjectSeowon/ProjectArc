@@ -668,6 +668,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a7e041aa12da6a44a9c9d01d43b34ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FoodPrefab: {fileID: 4665824876143991097, guid: b2c5b21b10688374ca9d9ae8ca08fc13, type: 3}
   Width: 20
   Height: 10
   GroundTiles:
