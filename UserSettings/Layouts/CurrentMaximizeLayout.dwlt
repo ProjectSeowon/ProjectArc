@@ -19,12 +19,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 36
-    width: 875.3334
-    height: 959.3334
+    width: 1698.6667
+    height: 953.3334
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 2882
+  controlID: 1085
   draggingID: 0
 --- !u!114 &2
 MonoBehaviour:
@@ -47,10 +47,10 @@ MonoBehaviour:
     m_TextWithWhitespace: "Game\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1040.6667
+    x: 410.6667
     y: 86
-    width: 397.3333
-    height: 643.3333
+    width: 772
+    height: 639.3333
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -106,10 +106,10 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 397.3333
-      height: 622.3333
-    m_Scale: {x: 0.31041664, y: 0.31041664}
-    m_Translation: {x: 198.66666, y: 311.16666}
+      width: 772
+      height: 618.3333
+    m_Scale: {x: 0.603125, y: 0.603125}
+    m_Translation: {x: 386, y: 309.16666}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -117,12 +117,12 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -640
-      y: -1002.41614
+      y: -512.608
       width: 1280
-      height: 2004.8323
+      height: 1025.216
     m_MinimalGUI: 1
-  m_defaultScale: 0.31041664
-  m_LastWindowPixelSize: {x: 596, y: 965}
+  m_defaultScale: 0.603125
+  m_LastWindowPixelSize: {x: 1158, y: 959}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -148,12 +148,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 610
-    height: 959.3334
+    width: 1184
+    height: 953.3334
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 2836
+  controlID: 1042
   draggingID: 0
 --- !u!114 &4
 MonoBehaviour:
@@ -174,12 +174,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 610
-    height: 669.3333
+    width: 1184
+    height: 665.3333
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 2812
+  controlID: 1018
   draggingID: 0
 --- !u!114 &5
 MonoBehaviour:
@@ -198,8 +198,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 210.66667
-    height: 669.3333
+    width: 410
+    height: 665.3333
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 6}
@@ -228,10 +228,10 @@ MonoBehaviour:
     m_TextWithWhitespace: "Hierarchy\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 830
+    x: 0.6666667
     y: 86
-    width: 209.66667
-    height: 643.3333
+    width: 409
+    height: 639.3333
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -288,10 +288,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 210.66667
+    x: 410
     y: 0
-    width: 399.3333
-    height: 669.3333
+    width: 774
+    height: 665.3333
   m_MinSize: {x: 202, y: 226}
   m_MaxSize: {x: 4002, y: 4026}
   m_ActualView: {fileID: 2}
@@ -938,9 +938,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 669.3333
-    width: 610
-    height: 290.00006
+    y: 665.3333
+    width: 1184
+    height: 288.00006
   m_MinSize: {x: 230, y: 250}
   m_MaxSize: {x: 10000, y: 10000}
   m_ActualView: {fileID: 10}
@@ -970,10 +970,10 @@ MonoBehaviour:
     m_TextWithWhitespace: "Project\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 830
-    y: 755.3334
-    width: 609
-    height: 264.00006
+    x: 0.6666667
+    y: 751.3334
+    width: 1183
+    height: 262.00006
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -996,7 +996,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/UI Toolkit/UnityThemes
+    - Assets/Scripts
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1006,16 +1006,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/UI Toolkit/UnityThemes
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\catsu\ProjectArc
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 64bf0000
-    m_LastClickedID: 48996
-    m_ExpandedIDs: 000000003eb3000098bf000000ca9a3bffffff7f
+    m_SelectedIDs: 88b50000
+    m_LastClickedID: 46472
+    m_ExpandedIDs: 0000000080b3000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1044,7 +1044,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000003eb3000000ca9a3bffffff7f
+    m_ExpandedIDs: 0000000080b3000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1070,8 +1070,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: a2b20000
-    m_LastClickedInstanceID: 45730
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c62300000aaf00002eae0000
     m_RenameOverlay:
@@ -1148,24 +1148,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: Window
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 610
+    x: 1184
     y: 0
-    width: 265.33337
-    height: 959.3334
-  m_MinSize: {x: 276, y: 76}
+    width: 514.66675
+    height: 953.3334
+  m_MinSize: {x: 51, y: 76}
   m_MaxSize: {x: 4001, y: 4026}
-  m_ActualView: {fileID: 13}
+  m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 13}
   - {fileID: 14}
   - {fileID: 15}
-  m_Selected: 0
-  m_LastSelected: 2
+  m_Selected: 2
+  m_LastSelected: 0
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1187,10 +1187,10 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1440
+    x: 1434
     y: 86
-    width: 264.33337
-    height: 933.3334
+    width: 264.3333
+    height: 927.3333
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1208,7 +1208,7 @@ MonoBehaviour:
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: 45730
+  m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
@@ -1300,10 +1300,10 @@ MonoBehaviour:
     m_TextWithWhitespace: "Git for Unity\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1189.3334
-    y: 78.66667
-    width: 516.33325
-    height: 942
+    x: 1184.6667
+    y: 86
+    width: 513.66675
+    height: 927.3334
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1315,14 +1315,14 @@ MonoBehaviour:
     m_SaveData: []
     m_ContainerData: []
     m_OverlaysVisible: 1
-  progressMessageClearTime: -1
+  progressMessageClearTime: 439.90474
   notificationClearTime: -1
   timeSinceLastRotation: -1
   currentBranchAndRemoteHasUpdate: 0
-  currentTrackingStatusHasUpdate: 1
-  currentStatusEntriesHasUpdate: 1
-  repositoryProgressHasUpdate: 1
-  appManagerProgressHasUpdate: 1
+  currentTrackingStatusHasUpdate: 0
+  currentStatusEntriesHasUpdate: 0
+  repositoryProgressHasUpdate: 0
+  appManagerProgressHasUpdate: 0
   changeTab: 3
   activeTab: 3
   initProjectView:
@@ -1507,8 +1507,8 @@ MonoBehaviour:
       tracking: '[None]'
   changesView:
     currentBranchHasUpdate: 0
-    currentStatusEntriesHasUpdate: 1
-    currentLocksHasUpdate: 1
+    currentStatusEntriesHasUpdate: 0
+    currentLocksHasUpdate: 0
     commitBody: 
     commitMessage: 
     currentBranch: master
@@ -1517,8 +1517,8 @@ MonoBehaviour:
       assets:
         keys:
         - 00000000000000001000000000000000
-        - 85d946719b9170f46b8687712decf435
-        - 8c9cfa26abfee488c85f1582747f6a02
+        - 890f5e89c14165640bff5b52d911031a
+        - ee1ccf673e9db714c9e927eff456aea5
         values:
         - path: Assets
           label: Assets
@@ -1538,8 +1538,8 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
-        - path: Assets\Scenes
-          label: Scenes
+        - path: Assets\Scripts
+          label: Scripts
           level: 1
           isFolder: 1
           isContainer: 0
@@ -1556,8 +1556,8 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
-        - path: Assets\Scenes\SampleScene.unity
-          label: SampleScene.unity
+        - path: Assets\Scripts\GameManager.cs
+          label: GameManager.cs
           level: 2
           isFolder: 0
           isContainer: 0
@@ -1568,16 +1568,18 @@ MonoBehaviour:
           checkState: 0
           isLocked: 0
           gitStatusEntry:
-            path: Assets\Scenes\SampleScene.unity
-            fullPath: C:\Users\catsu\ProjectArc\Assets\Scenes\SampleScene.unity
-            projectPath: Assets\Scenes\SampleScene.unity
+            path: Assets\Scripts\GameManager.cs
+            fullPath: C:\Users\catsu\ProjectArc\Assets\Scripts\GameManager.cs
+            projectPath: Assets\Scripts\GameManager.cs
             originalPath: 
             indexStatus: 0
             workTreeStatus: 3
       folders:
         keys:
         - Assets
-        - Assets\Scenes
+        - Assets\Scripts
+        - UserSettings
+        - UserSettings\Layouts
         values:
         - path: Assets
           label: Assets
@@ -1597,8 +1599,44 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
-        - path: Assets\Scenes
-          label: Scenes
+        - path: Assets\Scripts
+          label: Scripts
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: UserSettings
+          label: UserSettings
+          level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: UserSettings\Layouts
+          label: Layouts
           level: 1
           isFolder: 1
           isContainer: 0
@@ -1661,8 +1699,8 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Assets\Scenes
-        label: Scenes
+      - path: Assets\Scripts
+        label: Scripts
         level: 1
         isFolder: 1
         isContainer: 0
@@ -1679,8 +1717,8 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Assets\Scenes\SampleScene.unity
-        label: SampleScene.unity
+      - path: Assets\Scripts\GameManager.cs
+        label: GameManager.cs
         level: 2
         isFolder: 0
         isContainer: 0
@@ -1691,9 +1729,81 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets\Scenes\SampleScene.unity
-          fullPath: C:\Users\catsu\ProjectArc\Assets\Scenes\SampleScene.unity
-          projectPath: Assets\Scenes\SampleScene.unity
+          path: Assets\Scripts\GameManager.cs
+          fullPath: C:\Users\catsu\ProjectArc\Assets\Scripts\GameManager.cs
+          projectPath: Assets\Scripts\GameManager.cs
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: UserSettings
+        label: UserSettings
+        level: 0
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: UserSettings\Layouts
+        label: Layouts
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: UserSettings\Layouts\CurrentMaximizeLayout.dwlt
+        label: CurrentMaximizeLayout.dwlt
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: UserSettings\Layouts\CurrentMaximizeLayout.dwlt
+          fullPath: C:\Users\catsu\ProjectArc\UserSettings\Layouts\CurrentMaximizeLayout.dwlt
+          projectPath: UserSettings\Layouts\CurrentMaximizeLayout.dwlt
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: UserSettings\Layouts\default-6000.dwlt
+        label: default-6000.dwlt
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: UserSettings\Layouts\default-6000.dwlt
+          fullPath: C:\Users\catsu\ProjectArc\UserSettings\Layouts\default-6000.dwlt
+          projectPath: UserSettings\Layouts\default-6000.dwlt
           originalPath: 
           indexStatus: 0
           workTreeStatus: 3
@@ -1717,21 +1827,33 @@ MonoBehaviour:
           indexStatus: 0
           workTreeStatus: 0
     gitStatusEntries:
-    - path: Assets\Scenes\SampleScene.unity
-      fullPath: C:\Users\catsu\ProjectArc\Assets\Scenes\SampleScene.unity
-      projectPath: Assets\Scenes\SampleScene.unity
+    - path: Assets\Scripts\GameManager.cs
+      fullPath: C:\Users\catsu\ProjectArc\Assets\Scripts\GameManager.cs
+      projectPath: Assets\Scripts\GameManager.cs
       originalPath: 
       indexStatus: 0
       workTreeStatus: 3
-    changedFilesText: 1 changed file
+    - path: UserSettings\Layouts\CurrentMaximizeLayout.dwlt
+      fullPath: C:\Users\catsu\ProjectArc\UserSettings\Layouts\CurrentMaximizeLayout.dwlt
+      projectPath: UserSettings\Layouts\CurrentMaximizeLayout.dwlt
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: UserSettings\Layouts\default-6000.dwlt
+      fullPath: C:\Users\catsu\ProjectArc\UserSettings\Layouts\default-6000.dwlt
+      projectPath: UserSettings\Layouts\default-6000.dwlt
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    changedFilesText: 3 changed files
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 2025-03-10T10:16:25.259-04:00
+      updatedTimeString: 2025-03-10T13:54:22.680-04:00
       cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2025-03-10T10:34:00.647-04:00
+      updatedTimeString: 2025-03-10T14:01:08.975-04:00
       cacheType: 6
     lastLocksChangedEvent:
-      updatedTimeString: 2025-03-10T10:34:18.127-04:00
+      updatedTimeString: 0001-01-01T00:00:00.000+00:00
       cacheType: 7
   historyView:
     currentLogHasUpdate: 0
@@ -2018,13 +2140,13 @@ MonoBehaviour:
     m_Tooltip: Url of the origin remote
     m_TextWithWhitespace: "https://github.com/ProjectSeowon/ProjectArc\u200B"
   lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 2025-03-10T10:16:25.259-04:00
+    updatedTimeString: 2025-03-10T13:54:22.680-04:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2025-03-10T10:30:05.912-04:00
+    updatedTimeString: 2025-03-10T13:56:13.507-04:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2025-03-10T10:30:05.890-04:00
+    updatedTimeString: 2025-03-10T14:01:08.975-04:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
@@ -2046,8 +2168,8 @@ MonoBehaviour:
     m_Image: {fileID: 0}
     m_Tooltip: 
     m_TextWithWhitespace: "Fetch\u200B"
-  repositoryProgressValue: 0
+  repositoryProgressValue: 0.8
   repositoryProgressMessage: 
-  appManagerProgressValue: 0
+  appManagerProgressValue: 1
   appManagerProgressMessage: 
   primaryConnectionUsername: 
