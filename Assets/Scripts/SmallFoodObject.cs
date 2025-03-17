@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class FoodObject : TileObject
+public class SmallFoodObject : TileObject
 {
     public int AG = 10;
     public override void PlayerHereNow()

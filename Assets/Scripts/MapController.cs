@@ -10,6 +10,7 @@ public class MapController : MonoBehaviour
     private Tilemap m_Tilemap;
     private Grid m_Grid;
     public FoodObject FoodPrefab;
+    public SmallFoodObject SmallFoodPrefab;
     
     public int Width;
     public int Height;
@@ -89,12 +90,20 @@ public class MapController : MonoBehaviour
         int FoodCount = Random.Range(1, 10);
         for(int i = 0; i < FoodCount; ++i)
         {
+            int rand = Random.Range(0, 10);
             int randIDX = Random.Range(0, m_EmptyTileList.Count);
             Vector2Int coord = m_EmptyTileList[randIDX];
             TileData data = m_MapData[coord.x, coord.y];
-            FoodObject newFood = Instantiate(FoodPrefab);
-            newFood.transform.position = TileToWorld(new Vector2Int(coord.x, coord.y));
-            data.ContainedObject = newFood;
+            if(rand % 2 == 0)
+            {
+                FoodObject newFood = Instantiate(FoodPrefab);
+                newFood.transform.position = TileToWorld(new Vector2Int(coord.x, coord.y));
+                data.ContainedObject = newFood;
+            }else{
+                SmallFoodObject newSmallFood = Instantiate(SmallFoodPrefab);
+                newSmallFood.transform.position = TileToWorld(new Vector2Int(coord.x, coord.y));
+                data.ContainedObject = newSmallFood;
+            }
             
         }
     }

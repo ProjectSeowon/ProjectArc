@@ -56,7 +56,11 @@ public class GameManager : MonoBehaviour
     }
     void OnTurn()
     {
-        m_Food = m_Food - 1;
+        FoodChanger(-1);
+    }
+    public void FoodChanger(int a)
+    {
+        m_Food += a;
         m_FoodLabel.text = "Food: " + m_Food / 2;
     }
 
