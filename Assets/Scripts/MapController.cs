@@ -9,8 +9,10 @@ public class MapController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private Tilemap m_Tilemap;
     private Grid m_Grid;
+
     public FoodObject FoodPrefab;
     public SmallFoodObject SmallFoodPrefab;
+    public WallObject WallPrefab;
     
     public int Width;
     public int Height;
@@ -73,11 +75,14 @@ public class MapController : MonoBehaviour
            }
        }
        m_EmptyTileList.Remove(new Vector2Int(1, 1));
+       GenWall();
        GenerateFood();
     }
+
     public Vector3 TileToWorld(Vector2Int tileIndex){
         return m_Grid.GetCellCenterWorld((Vector3Int)tileIndex);
     }
+
     public TileData GetTileData(Vector2Int tileIndex){
         if(tileIndex.x < 0 || tileIndex.x >= Width || tileIndex.y < 0 || tileIndex.y >= Height){
             return null;
@@ -85,6 +90,7 @@ public class MapController : MonoBehaviour
 
         return m_MapData[tileIndex.x, tileIndex.y];
     }
+
     void GenerateFood()
     {
         int FoodCount = Random.Range(1, 10);
@@ -107,5 +113,29 @@ public class MapController : MonoBehaviour
             
         }
     }
-       
+
+    void GenWall()
+    {
+        int WallCount = Random.Range(6, 10);
+        for (int i = 0; i < WallCount; ++ i)
+        {
+            int randIDX = Random.Range(0, m_EmptyTileList.Count);
+            Vector2Int coord = m_EmptyTileList[randIDX];
+
+            m_EmptyTileList.RemoveAt(randIDX);
+            TileData data = m_MapData[coord.x, coord.y];
+            WallObject newWall = Instantiate(WallPrefab);
+
+            newWall.Init(coord);
+
+            newWall.transform.position = TileToWorld(coord);
+
+            data.ContainedObject = newWall;
+        }
+    }
+    
+    public void SetTile(Vector2Int tileIDX, Tile tile)
+    {
+        m_Tilemap.SetTile(new Vector3Int(tileIDX.x, tileIDX.y, 0), tile);
+    }   
 }

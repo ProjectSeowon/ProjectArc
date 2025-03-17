@@ -670,6 +670,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FoodPrefab: {fileID: 4665824876143991097, guid: b2c5b21b10688374ca9d9ae8ca08fc13, type: 3}
   SmallFoodPrefab: {fileID: 4023956910880156116, guid: e9e1d41ae327ca54987d013ab999b830, type: 3}
+  WallPrefab: {fileID: 1396786397}
   Width: 20
   Height: 10
   GroundTiles:
@@ -722,6 +723,51 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1361543076}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1396786396
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1396786398}
+  - component: {fileID: 1396786397}
+  m_Layer: 0
+  m_Name: Wall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1396786397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396786396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31ccc0ee81acb414aa46ceafd8433430, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObstacleTile: {fileID: 11400000, guid: 270df4b4593796a48ae796d547834e97, type: 2}
+--- !u!4 &1396786398
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396786396}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -818,5 +864,6 @@ SceneRoots:
   - {fileID: 1361543078}
   - {fileID: 273711290}
   - {fileID: 17695208}
+  - {fileID: 1396786398}
   - {fileID: 1751871744}
   - {fileID: 866884671}

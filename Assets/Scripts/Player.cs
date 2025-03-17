@@ -94,9 +94,10 @@ public class Player : MonoBehaviour
 
             if(tileData != null && tileData.Passable){
                 GameManager.Instance.TurnManager.Tick();
-                Move(newTileTarget);
-                if (tileData.ContainedObject != null)
+                if (tileData.ContainedObject == null){Move(newTileTarget);}
+                else if (tileData.ContainedObject != null)
                 {
+                    Move(newTileTarget);
                     tileData.ContainedObject.PlayerHereNow();
                 }
             }

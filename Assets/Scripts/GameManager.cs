@@ -1,5 +1,6 @@
 using System.ComponentModel;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
@@ -54,19 +55,15 @@ public class GameManager : MonoBehaviour
         Player.Spawn(MapController, new Vector2Int(1, 1));
         MapController.player = Player;
     }
+    
     void OnTurn()
     {
         FoodChanger(-1);
     }
+    
     public void FoodChanger(int a)
     {
         m_Food += a;
         m_FoodLabel.text = "Food: " + m_Food / 2;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
