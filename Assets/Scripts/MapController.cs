@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.Collections;
 using Unity.VisualScripting;
 using UnityEditor.PackageManager.Requests;
 using UnityEngine;
@@ -13,6 +14,7 @@ public class MapController : MonoBehaviour
     public FoodObject FoodPrefab;
     public SmallFoodObject SmallFoodPrefab;
     public WallObject WallPrefab;
+    public ExitTileObject ExitTilePrefab;
     
     public int Width;
     public int Height;
@@ -75,8 +77,20 @@ public class MapController : MonoBehaviour
            }
        }
        m_EmptyTileList.Remove(new Vector2Int(1, 1));
+       Vector2Int endCoord = new Vector2Int(Width - 2, Height - 2);
+       AddObject(Instantiate(ExitTilePrefab), endCoord);
+       m_EmptyTileList.Remove(endCoord);
+
        GenWall();
        GenerateFood();
+    }
+
+    void AddObject(TileObject obj, Vector2Int coord)
+    {
+        TileData data = m_MapData[coord.x, coord.y];
+        obj.transform.position = TileToWorld(coord);
+        data.ContainedObject = obj;
+        obj.Init(coord);
     }
 
     public Vector3 TileToWorld(Vector2Int tileIndex){
@@ -93,22 +107,19 @@ public class MapController : MonoBehaviour
 
     void GenerateFood()
     {
-        int FoodCount = Random.Range(1, 10);
+        int FoodCount = Random.Range(5, 10);
         for(int i = 0; i < FoodCount; ++i)
         {
             int rand = Random.Range(0, 10);
             int randIDX = Random.Range(0, m_EmptyTileList.Count);
             Vector2Int coord = m_EmptyTileList[randIDX];
-            TileData data = m_MapData[coord.x, coord.y];
             if(rand % 2 == 0)
             {
                 FoodObject newFood = Instantiate(FoodPrefab);
-                newFood.transform.position = TileToWorld(new Vector2Int(coord.x, coord.y));
-                data.ContainedObject = newFood;
+                AddObject(newFood, coord);
             }else{
                 SmallFoodObject newSmallFood = Instantiate(SmallFoodPrefab);
-                newSmallFood.transform.position = TileToWorld(new Vector2Int(coord.x, coord.y));
-                data.ContainedObject = newSmallFood;
+                AddObject(newSmallFood, coord);
             }
             
         }
@@ -122,20 +133,40 @@ public class MapController : MonoBehaviour
             int randIDX = Random.Range(0, m_EmptyTileList.Count);
             Vector2Int coord = m_EmptyTileList[randIDX];
 
-            m_EmptyTileList.RemoveAt(randIDX);
             TileData data = m_MapData[coord.x, coord.y];
             WallObject newWall = Instantiate(WallPrefab);
 
-            newWall.Init(coord);
-
-            newWall.transform.position = TileToWorld(coord);
-
-            data.ContainedObject = newWall;
+            AddObject(newWall, coord);
         }
     }
     
     public void SetTile(Vector2Int tileIDX, Tile tile)
     {
         m_Tilemap.SetTile(new Vector3Int(tileIDX.x, tileIDX.y, 0), tile);
-    }   
+    }
+
+    public Tile GetTile(Vector2Int tileIDX)
+    {
+        return m_Tilemap.GetTile<Tile>(new Vector3Int(tileIDX.x, tileIDX.y));
+    }
+
+    public void Clean()
+    {
+        if (m_MapData == null)
+            return;
+        
+        for (int y = 0; y < Height; ++y)
+        {
+            for (int i = 0; i < Width; ++i)
+            {
+                var tileData = m_MapData[i ,y];
+                if (tileData.ContainedObject != null)
+                {
+                    Destroy(tileData.ContainedObject.gameObject);
+                }
+
+                SetTile(new Vector2Int(i, y), null);
+            }
+        }
+    }
 }

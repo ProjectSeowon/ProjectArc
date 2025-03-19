@@ -671,6 +671,7 @@ MonoBehaviour:
   FoodPrefab: {fileID: 4665824876143991097, guid: b2c5b21b10688374ca9d9ae8ca08fc13, type: 3}
   SmallFoodPrefab: {fileID: 4023956910880156116, guid: e9e1d41ae327ca54987d013ab999b830, type: 3}
   WallPrefab: {fileID: 1396786397}
+  ExitTilePrefab: {fileID: 3548407464660579937, guid: db04d2506ddb4fd4aad7caee573d38ed, type: 3}
   Width: 20
   Height: 10
   GroundTiles:
@@ -761,6 +762,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObstacleTile: {fileID: 11400000, guid: 270df4b4593796a48ae796d547834e97, type: 2}
+  MaxHealth: 3
 --- !u!4 &1396786398
 Transform:
   m_ObjectHideFlags: 0
@@ -864,6 +866,6 @@ SceneRoots:
   - {fileID: 1361543078}
   - {fileID: 273711290}
   - {fileID: 17695208}
-  - {fileID: 1396786398}
   - {fileID: 1751871744}
   - {fileID: 866884671}
+  - {fileID: 1396786398}
