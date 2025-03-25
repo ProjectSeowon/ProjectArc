@@ -107,7 +107,7 @@ public class MapController : MonoBehaviour
 
     void GenerateFood()
     {
-        int FoodCount = Random.Range(5, 10);
+        int FoodCount = Random.Range(1, 5);
         for(int i = 0; i < FoodCount; ++i)
         {
             int rand = Random.Range(0, 10);
@@ -121,7 +121,7 @@ public class MapController : MonoBehaviour
                 SmallFoodObject newSmallFood = Instantiate(SmallFoodPrefab);
                 AddObject(newSmallFood, coord);
             }
-            
+            m_EmptyTileList.Remove(coord);
         }
     }
 
@@ -134,9 +134,11 @@ public class MapController : MonoBehaviour
             Vector2Int coord = m_EmptyTileList[randIDX];
 
             TileData data = m_MapData[coord.x, coord.y];
+            m_MapData[coord.x, coord.y].Passable = false;
             WallObject newWall = Instantiate(WallPrefab);
 
             AddObject(newWall, coord);
+            m_EmptyTileList.Remove(coord);
         }
     }
     

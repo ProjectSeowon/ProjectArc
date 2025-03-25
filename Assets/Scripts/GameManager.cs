@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
 
     public UIDocument UIDoc;
     private Label m_FoodLabel;
+    private VisualElement m_GameOver;
+    private Label m_GameOverMessage;
 
     public TurnManager TurnManager {get; private set;}
 
@@ -41,18 +43,34 @@ public class GameManager : MonoBehaviour
             return;
         }
 
-        Debug.Log("MapController is assigned. Proceeding to Init...");
-        MapController.Init();
-
         if (Player == null)
         {
             Debug.LogError("Player is not assigned in the Inspector!");
             return;
         }
         
-        NewLevel();
         m_FoodLabel = UIDoc.rootVisualElement.Q<Label>("FoodLabel");
         m_FoodLabel.text = "Food: " + m_Food / 2;
+        m_GameOver = UIDoc.rootVisualElement.Q<VisualElement>("GameOver");
+        m_GameOverMessage = m_GameOver.Q<Label>("GameOverMessage");
+
+        StartNewGame();
+    }
+
+    public void StartNewGame()
+    {
+        MapController.Clean();
+        MapController.Init();
+
+        m_GameOver.style.visibility = Visibility.Hidden;
+
+        m_CurLevel = 1;
+        m_Food = 100;
+        m_FoodLabel.text = "Food: " + m_Food / 2;
+
+        
+        Player.Init();
+        Player.Spawn(MapController, new Vector2Int(1, 1));
     }
     
     void OnTurn()
@@ -64,6 +82,13 @@ public class GameManager : MonoBehaviour
     {
         m_Food += a;
         m_FoodLabel.text = "Food: " + m_Food / 2;
+
+        if (m_Food <= 0)
+        {
+            Player.GameOver();
+            m_GameOver.style.visibility = Visibility.Visible;
+            m_GameOverMessage.text = "Game Over!\n\nYou traveled through " + m_CurLevel + " levels";
+        }
     }
 
     public void NewLevel()

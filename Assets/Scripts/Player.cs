@@ -5,8 +5,14 @@ public class Player : MonoBehaviour
 {
     private MapController m_Map;
     private Vector2Int m_TilePosition;
-        
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    private bool m_GameOver;
+
+    public void Init()
+    {
+        m_GameOver = false;
+    }
+
     public void Spawn(MapController map, Vector2Int tile)
     {
        if (map == null)
@@ -29,10 +35,12 @@ public class Player : MonoBehaviour
         transform.position = m_Map.TileToWorld(tile);
     }
     private void Start() {
-    if (m_Map == null) {
-        Debug.LogWarning("MapController reference is null. Ensure Spawn is called before Update.");
+        if (m_Map == null) {
+            Debug.LogWarning("MapController reference is null. Ensure Spawn is called before Update.");
+        }
     }
-}
+
+    public void GameOver(){m_GameOver = true;}
 
     // Update is called once per frame
     private void Update()
@@ -43,6 +51,13 @@ public class Player : MonoBehaviour
 
         Vector2Int newTileTarget = m_TilePosition;
         bool hasMoved = false;
+
+        if (m_GameOver)
+        {
+            if (Keyboard.current.enterKey.wasPressedThisFrame){GameManager.Instance.StartNewGame();}
+            
+            return;
+        }
 
         if (Keyboard.current == null)
         {
