@@ -1,6 +1,7 @@
 using Unity.VersionControl.Git.ICSharpCode.SharpZipLib.Zip;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Tilemaps;
 
 public class Player : MonoBehaviour
 {
@@ -148,5 +149,6 @@ public class Player : MonoBehaviour
         }
         
     }
+    public Vector2Int Tile(){return m_TilePosition;}
 
 }
