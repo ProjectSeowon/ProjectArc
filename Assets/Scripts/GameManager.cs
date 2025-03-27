@@ -10,9 +10,9 @@ public class GameManager : MonoBehaviour
     
     public MapController MapController;
     public Player Player;
-    private int m_Food = 200;
+    private int m_Food;
     private int m_CurLevel = 1;
-    private int m_HP = 200;
+    private int m_HP = 100;
 
     public UIDocument UIDoc;
     private Label m_FoodLabel;
@@ -86,6 +86,7 @@ public class GameManager : MonoBehaviour
     
     public void FoodChanger(int a)
     {
+        Debug.Log(m_Food);
         if (m_Food > 0){
             m_Food += a;
             m_FoodLabel.text = "Food: " + m_Food / 2;
@@ -93,9 +94,24 @@ public class GameManager : MonoBehaviour
             Player.GameOver();
             m_GameOver.style.visibility = Visibility.Visible;
             m_GameOverMessage.text = "Game Over!\n\nYou traveled through " + m_CurLevel + " levels";
-        }else if (m_Food <= 0){
-            m_HP -= 1;
-            m_HPLabel.text = "HP: " + m_HP / 2;
+        }else if (m_Food == 1 || m_Food == 0){
+            if (a > 0){
+                m_Food += a;
+                m_FoodLabel.text = "Food: " + m_Food / 2;
+            }else{
+                m_Food -= 1;
+                m_HP -= 1;
+                m_HPLabel.text = "HP: " + m_HP / 2;
+            }
+            
+        }else if (m_Food < 0){
+            if (m_HP >= 200){
+                m_Food += a + 1;
+                m_FoodLabel.text = "Food: " + m_Food / 2;
+            }else{
+                m_HP += a;
+                m_HPLabel.text = "HP: " + m_HP / 2; 
+            } 
         }
     }
 

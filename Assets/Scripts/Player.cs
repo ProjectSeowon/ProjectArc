@@ -1,3 +1,4 @@
+using Unity.VersionControl.Git.ICSharpCode.SharpZipLib.Zip;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,8 +9,14 @@ public class Player : MonoBehaviour
 
     private bool m_GameOver;
 
+    public float MoveSpeed = 5.0f;
+
+    private bool m_Moving;
+    private Vector3 m_Target;
+
     public void Init()
     {
+        m_Moving = false;
         m_GameOver = false;
     }
 
@@ -25,14 +32,23 @@ public class Player : MonoBehaviour
         m_Map = map;
 
         Debug.Log("m_Map assigned successfully, calling Move...");
-        Move(tile);
+        Move(tile, true);
     }
-    public void Move(Vector2Int tile)
+    public void Move(Vector2Int tile, bool immediate)
     {
         //Debug.Log($"Moving player to tile: {tile}");
         
         m_TilePosition = tile;
-        transform.position = m_Map.TileToWorld(tile);
+
+        if (immediate)
+        {
+            m_Moving = false;
+            transform.position = m_Map.TileToWorld(tile);
+        }else{
+            m_Moving = true;
+            m_Target = m_Map.TileToWorld(m_TilePosition);
+            //transform.position = m_Map.TileToWorld(tile);
+        }
     }
     private void Start() {
         if (m_Map == null) {
@@ -103,16 +119,29 @@ public class Player : MonoBehaviour
             newTileTarget.x -= 1;
             hasMoved = true;}
 
-        
-        if(hasMoved){
+        if (m_Moving)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, m_Target, MoveSpeed * Time.deltaTime);
+            if (transform.position == m_Target)
+            {
+                m_Moving = false;
+                var tileData = m_Map.GetTileData(m_TilePosition);
+                if (tileData.ContainedObject != null){tileData.ContainedObject.PlayerWantsToEnter();}
+            }
+            return;
+        }
+        if(hasMoved)
+        {
             MapController.TileData tileData = m_Map.GetTileData(newTileTarget);
 
-            if(tileData != null && tileData.Passable){
+            if(tileData != null && tileData.Passable)
+            {
                 GameManager.Instance.TurnManager.Tick();
-                if (tileData.ContainedObject == null){Move(newTileTarget);}
-                else if (tileData.ContainedObject != null)
+
+                if (tileData.ContainedObject == null){Move(newTileTarget, false);}
+                else if (tileData.ContainedObject.PlayerWantsToEnter())
                 {
-                    Move(newTileTarget);
+                    Move(newTileTarget, true);
                     tileData.ContainedObject.PlayerHereNow();
                 }
             }
