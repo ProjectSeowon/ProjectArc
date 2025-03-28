@@ -76,4 +76,18 @@ public class Enemy : TileObject
             }
         }
     }
+
+    bool TryMoveInX(int xDist)
+    {
+        if (xDist > 0){return MoveTo(m_Tile + Vector2Int.right);}
+
+        return MoveTo(m_Tile + Vector2Int.left);
+    }
+
+    bool TryMoveInY(int yDist)
+    {
+        if (yDist > 0){return MoveTo(m_Tile + Vector2Int.left);}
+
+        return MoveTo(m_Tile + Vector2Int.right);
+    }
 }
