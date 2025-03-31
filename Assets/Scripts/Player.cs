@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
 
     private bool m_Moving;
     private Vector3 m_Target;
+    private bool StartGame = false;
 
     public void Init()
     {
@@ -68,6 +69,13 @@ public class Player : MonoBehaviour
 
         Vector2Int newTileTarget = m_TilePosition;
         bool hasMoved = false;
+        
+
+        if (Keyboard.current.spaceKey.wasPressedThisFrame)
+        {
+            GameManager.Instance.HideStartGame();
+            StartGame = true;
+        }
 
         if (m_GameOver)
         {
@@ -131,7 +139,7 @@ public class Player : MonoBehaviour
             }
             return;
         }
-        if(hasMoved)
+        if(hasMoved && StartGame)
         {
             MapController.TileData tileData = m_Map.GetTileData(newTileTarget);
 
@@ -142,7 +150,7 @@ public class Player : MonoBehaviour
                 if (tileData.ContainedObject == null){Move(newTileTarget, false);}
                 else if (tileData.ContainedObject.PlayerWantsToEnter())
                 {
-                    Move(newTileTarget, true);
+                    Move(newTileTarget, false);
                     tileData.ContainedObject.PlayerHereNow();
                 }
             }

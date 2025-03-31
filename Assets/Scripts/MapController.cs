@@ -15,6 +15,7 @@ public class MapController : MonoBehaviour
     public SmallFoodObject SmallFoodPrefab;
     public WallObject WallPrefab;
     public ExitTileObject ExitTilePrefab;
+    public Enemy EnemyPrefab;
     
     public int Width;
     public int Height;
@@ -83,6 +84,7 @@ public class MapController : MonoBehaviour
 
        GenWall();
        GenerateFood();
+       SpawnEnemy();
     }
 
     void AddObject(TileObject obj, Vector2Int coord)
@@ -127,7 +129,7 @@ public class MapController : MonoBehaviour
 
     void GenWall()
     {
-        int WallCount = Random.Range(6, 10);
+        int WallCount = Random.Range(6, 15);
         for (int i = 0; i < WallCount; ++ i)
         {
             int randIDX = Random.Range(0, m_EmptyTileList.Count);
@@ -138,6 +140,24 @@ public class MapController : MonoBehaviour
             WallObject newWall = Instantiate(WallPrefab);
 
             AddObject(newWall, coord);
+            m_EmptyTileList.Remove(coord);
+        }
+    }
+
+    void SpawnEnemy()
+    {
+        int EnemyCount = Random.Range(0, 10);
+        for (int E = 0; E < EnemyCount; ++E)
+        {
+            int randIDX = Random.Range(0, m_EmptyTileList.Count);
+            Vector2Int coord = m_EmptyTileList[randIDX];
+
+            TileData data = m_MapData[coord.x, coord.y];
+            m_MapData[coord.x, coord.y].Passable = false;
+            Enemy newEnemy = Instantiate(EnemyPrefab);
+
+            AddObject(newEnemy, coord);
+            newEnemy.Init(coord);
             m_EmptyTileList.Remove(coord);
         }
     }

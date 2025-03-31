@@ -389,6 +389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5342008e193d0ff4da047fa5238851ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MoveSpeed: 5
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -672,6 +673,7 @@ MonoBehaviour:
   SmallFoodPrefab: {fileID: 4023956910880156116, guid: e9e1d41ae327ca54987d013ab999b830, type: 3}
   WallPrefab: {fileID: 1396786397}
   ExitTilePrefab: {fileID: 3548407464660579937, guid: db04d2506ddb4fd4aad7caee573d38ed, type: 3}
+  EnemyPrefab: {fileID: 268568850809878114, guid: a3a21c339693de849a265446a2bc784e, type: 3}
   Width: 20
   Height: 10
   GroundTiles:

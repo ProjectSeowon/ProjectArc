@@ -1,6 +1,8 @@
 using System.ComponentModel;
+using Unity.VisualScripting;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.Tilemaps;
 using UnityEngine.UIElements;
 
@@ -19,6 +21,9 @@ public class GameManager : MonoBehaviour
     private VisualElement m_GameOver;
     private Label m_GameOverMessage;
     private Label m_HPLabel;
+    private VisualElement m_StartGame;
+    private Label m_StartGameMessage;
+    private Label m_Title;
 
     public TurnManager TurnManager {get; private set;}
 
@@ -59,9 +64,18 @@ public class GameManager : MonoBehaviour
 
         m_HPLabel = UIDoc.rootVisualElement.Q<Label>("HPLabel");
         m_HPLabel.text = "HP: " + m_HP / 2;
+        m_StartGame = UIDoc.rootVisualElement.Q<VisualElement>("StartGame");
+        m_StartGame.style.visibility = Visibility.Visible;
+        m_StartGameMessage = UIDoc.rootVisualElement.Q<Label>("StartGameMessage");
+        m_Title = UIDoc.rootVisualElement.Q<Label>("Title");
+        m_Title.text = "ProjectArc";
+        m_StartGameMessage.text = "Press Space to start game";
 
         StartNewGame();
     }
+
+    public void HideStartGame()
+    {m_StartGame.style.visibility = Visibility.Hidden;}
 
     public void StartNewGame()
     {
