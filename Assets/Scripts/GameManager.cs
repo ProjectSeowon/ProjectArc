@@ -9,6 +9,8 @@ using UnityEngine.UIElements;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance {get; private set;}
+
+    public SaveState Save;
     
     public MapController MapController;
     public Player Player;
@@ -92,6 +94,11 @@ public class GameManager : MonoBehaviour
         Player.Init();
         Player.Spawn(MapController, new Vector2Int(1, 1));
     }
+
+    public int GetLevel()
+    {
+        return m_CurLevel;
+    }
     
     void OnTurn()
     {
@@ -129,6 +136,10 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public int GetFood(){return m_Food;}
+
+    public int GetHP(){return m_HP;}
+
     public void NewLevel()
     {
         MapController.Clean();
@@ -137,5 +148,19 @@ public class GameManager : MonoBehaviour
         MapController.player = Player;
 
         m_CurLevel++;
+    }
+
+    void Update()
+    {
+        if (Keyboard.current.altKey.wasPressedThisFrame){Save.SaveGame();}
+        else if (Keyboard.current.xKey.wasPressedThisFrame && !Player.GameStart())
+        {
+            Save.LoadGame();
+            m_CurLevel = Save.GetLevel();
+            m_Food = Save.GetFood();
+            m_HP = Save.GetHP();
+            m_HPLabel.text = "HP: " + m_HP / 2;
+            m_FoodLabel.text = "Food: " + m_Food / 2;
+        }
     }
 }

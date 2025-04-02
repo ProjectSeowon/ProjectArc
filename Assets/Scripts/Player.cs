@@ -16,6 +16,8 @@ public class Player : MonoBehaviour
     private Vector3 m_Target;
     private bool StartGame = false;
 
+    private int level;
+
     public void Init()
     {
         m_Moving = false;
@@ -57,6 +59,8 @@ public class Player : MonoBehaviour
             Debug.LogWarning("MapController reference is null. Ensure Spawn is called before Update.");
         }
     }
+
+    public bool GameStart(){return StartGame;}
 
     public void GameOver(){m_GameOver = true;}
 
@@ -158,5 +162,4 @@ public class Player : MonoBehaviour
         
     }
     public Vector2Int Tile(){return m_TilePosition;}
-
 }
