@@ -8,6 +8,7 @@ public class SaveState : MonoBehaviour
     private int playerHP = 100;
     private int playerFood = 100;
     private string Save;
+    private Save SV()
     void Start()
     {
         GameManager = FindFirstObjectByType<GameManager>();
@@ -16,30 +17,28 @@ public class SaveState : MonoBehaviour
     
     public void SaveGame()
     {
-        level = GameManager.GetLevel();
-        playerHP = GameManager.GetHP();
-        playerFood = GameManager.GetFood();
-        Save = JsonUtility.ToJson(this);
+        
+        Save = JsonUtility.ToJson(SV());
     }
     
     public void LoadGame()
     {
-        JsonUtility.FromJsonOverwrite(Save, this);
+        JsonUtility.FromJson(Save, SV());
     }
 
     public int GetHP()
     {
-        return playerHP;
+        return 0;
     }
 
     public int GetFood()
     {
-        return playerFood;
+        return 0;
     }
 
     public int GetLevel()
     {
-        return level;
+        return -1;
     }
 
 }
