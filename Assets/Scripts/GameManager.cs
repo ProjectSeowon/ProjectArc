@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance {get; private set;}
 
-    public SaveState Save;
+    public SaveState SaveState;
     
     public MapController MapController;
     public Player Player;
@@ -149,17 +149,18 @@ public class GameManager : MonoBehaviour
         m_CurLevel++;
     }
 
+    public void LoadFood(int UF){m_Food = UF;}
+
+    public void LoadHP(int UH){m_HP = UH;}
+
+    public void LoadLevel(int UL){m_CurLevel = UL;}
+
     void Update()
     {
-        if (Keyboard.current.altKey.wasPressedThisFrame){Save.SaveGame();}
-        else if (Keyboard.current.xKey.wasPressedThisFrame && !Player.GameStart())
+        if (Keyboard.current.altKey.wasPressedThisFrame){SaveState.SaveGame();}
+        else if (Keyboard.current.xKey.wasPressedThisFrame)
         {
-            Save.LoadGame();
-            m_CurLevel = Save.GetLevel();
-            m_Food = Save.GetFood();
-            m_HP = Save.GetHP();
-            m_HPLabel.text = "HP: " + m_HP / 2;
-            m_FoodLabel.text = "Food: " + m_Food / 2;
+            SaveState.LoadGame();
         }
     }
 }
