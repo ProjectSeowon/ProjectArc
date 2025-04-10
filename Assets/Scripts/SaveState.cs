@@ -1,44 +1,32 @@
 using Unity.VisualScripting;
 using UnityEngine;
 public class SaveState : MonoBehaviour
-{
-    public GameManager GameManager;
-    public MapController Map;
-    private int level;
-    private int playerHP = 100;
-    private int playerFood = 100;
-    private string Save;
-    private Save SV()
-    void Start()
-    {
-        GameManager = FindFirstObjectByType<GameManager>();
-        Map = FindFirstObjectByType<MapController>();
-    }
-    
+{    
     public void SaveGame()
     {
-        
-        Save = JsonUtility.ToJson(SV());
+        GameManager GameManager = FindFirstObjectByType<GameManager>();
+        SaveData SaveData = new SaveData();
+        SaveData.Level = GameManager.GetLevel();
+        SaveData.HP = GameManager.GetHP();
+        SaveData.Food = GameManager.GetFood();
+        String json = JsonUtility.ToJson(SaveData);
+        string path = Application.persistentDataPath + "/save.json";
+        System.IO.File.WriteAllText(path, json);
     }
     
     public void LoadGame()
     {
-        JsonUtility.FromJson(Save, SV());
+        GameManager GameManager = FindFirstObjectByType<GameManager>();
+        string path = Application.persistentDataPath + "/save.json";
+        if (System.IO.File.Exists(path))
+        {
+            string json = System.IO.File.ReadAllText(path);
+            SaveData LoadedData = JsonUtility.FromJson<SaveData>(json);\
+            GameManager.LoadLevel(LoadedData.Level);
+            GameManager.LoadHP(LoadedData.HP);
+            GameManager.LoadFood(LoadedData.Food);
+        }else{
+            Debug.LogWarning("No save file found!");
+        }
     }
-
-    public int GetHP()
-    {
-        return 0;
-    }
-
-    public int GetFood()
-    {
-        return 0;
-    }
-
-    public int GetLevel()
-    {
-        return -1;
-    }
-
 }
