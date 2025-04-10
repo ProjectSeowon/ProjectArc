@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1706.6667
     height: 1024
   m_ShowMode: 4
-  m_Title: Console
+  m_Title: Git for Unity
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 121
+  controlID: 107
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 74
+  controlID: 18
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 68
+  controlID: 19
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -264,7 +264,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: Window
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -273,14 +273,14 @@ MonoBehaviour:
     y: 0
     width: 403.33325
     height: 968
-  m_MinSize: {x: 276, y: 76}
+  m_MinSize: {x: 51, y: 76}
   m_MaxSize: {x: 4001, y: 4026}
-  m_ActualView: {fileID: 13}
+  m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 13}
   - {fileID: 19}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -374,8 +374,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1304.3334
-    y: 24
+    x: 1303.3334
+    y: 78.66667
     width: 402.33325
     height: 942
   m_SerializedDataModeController:
@@ -443,7 +443,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: c0e2ffffd2e2ffff62e5ffff0afbffff
+      m_ExpandedIDs: 0afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1401,8 +1401,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Git for Unity\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1303.3334
-    y: 78.66667
+    x: 1304.3334
+    y: 24
     width: 402.33325
     height: 942
   m_SerializedDataModeController:
@@ -1420,10 +1420,10 @@ MonoBehaviour:
   notificationClearTime: -1
   timeSinceLastRotation: -1
   currentBranchAndRemoteHasUpdate: 0
-  currentTrackingStatusHasUpdate: 1
-  currentStatusEntriesHasUpdate: 1
-  repositoryProgressHasUpdate: 1
-  appManagerProgressHasUpdate: 1
+  currentTrackingStatusHasUpdate: 0
+  currentStatusEntriesHasUpdate: 0
+  repositoryProgressHasUpdate: 0
+  appManagerProgressHasUpdate: 0
   changeTab: 3
   activeTab: 3
   initProjectView:
@@ -1517,203 +1517,13 @@ MonoBehaviour:
     treeScroll: {x: 0, y: 0}
     treeChanges:
       assets:
-        keys:
-        - 00000000000000001000000000000000
-        - ed461d09f4f38b34bb9c999e6d13c1b0
-        - b38accfa798028644a7e91a8a6d0bda5
-        - 7d4baacd615aa4f43a29e790e38c7f39
-        - d87385f4fcc7cf64d8b585780565d30a
-        - 751ec40463328094086b240f89182ca7
-        - e5cc97cc71dd1514fac520782184ecf7
-        values:
-        - path: Assets
-          label: Assets
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Sprites
-          label: Sprites
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Sprites\Enemy
-          label: Enemy
-          level: 2
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Sprites\Enemy\EnemFinalFrameMove2.png
-          label: EnemFinalFrameMove2.png
-          level: 3
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Sprites\Enemy\EnemFinalFrameMove2.png
-            fullPath: C:\Users\catsu\ProjectArc\Assets\Sprites\Enemy\EnemFinalFrameMove2.png
-            projectPath: Assets\Sprites\Enemy\EnemFinalFrameMove2.png
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Sprites\Enemy\EnemyFinal.png
-          label: EnemyFinal.png
-          level: 3
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Sprites\Enemy\EnemyFinal.png
-            fullPath: C:\Users\catsu\ProjectArc\Assets\Sprites\Enemy\EnemyFinal.png
-            projectPath: Assets\Sprites\Enemy\EnemyFinal.png
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Sprites\Enemy\EnemyFinalFrameMove1.png
-          label: EnemyFinalFrameMove1.png
-          level: 3
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Sprites\Enemy\EnemyFinalFrameMove1.png
-            fullPath: C:\Users\catsu\ProjectArc\Assets\Sprites\Enemy\EnemyFinalFrameMove1.png
-            projectPath: Assets\Sprites\Enemy\EnemyFinalFrameMove1.png
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Sprites\Enemy\EnemyFinalFrameMove3.png
-          label: EnemyFinalFrameMove3.png
-          level: 3
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Sprites\Enemy\EnemyFinalFrameMove3.png
-            fullPath: C:\Users\catsu\ProjectArc\Assets\Sprites\Enemy\EnemyFinalFrameMove3.png
-            projectPath: Assets\Sprites\Enemy\EnemyFinalFrameMove3.png
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
+        keys: []
+        values: []
       folders:
         keys:
-        - Assets
-        - Assets\Sprites
-        - Assets\Sprites\Enemy
         - UserSettings
         - UserSettings\Layouts
         values:
-        - path: Assets
-          label: Assets
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Sprites
-          label: Sprites
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Sprites\Enemy
-          label: Enemy
-          level: 2
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
         - path: UserSettings
           label: UserSettings
           level: 0
@@ -1778,222 +1588,6 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Assets
-        label: Assets
-        level: 0
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Sprites
-        label: Sprites
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Sprites\Enemy.meta
-        label: Enemy.meta
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Sprites\Enemy.meta
-          fullPath: C:\Users\catsu\ProjectArc\Assets\Sprites\Enemy.meta
-          projectPath: Assets\Sprites\Enemy.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Sprites\Enemy
-        label: Enemy
-        level: 2
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Sprites\Enemy\EnemFinalFrameMove2.png
-        label: EnemFinalFrameMove2.png
-        level: 3
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Sprites\Enemy\EnemFinalFrameMove2.png
-          fullPath: C:\Users\catsu\ProjectArc\Assets\Sprites\Enemy\EnemFinalFrameMove2.png
-          projectPath: Assets\Sprites\Enemy\EnemFinalFrameMove2.png
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Sprites\Enemy\EnemFinalFrameMove2.png.meta
-        label: EnemFinalFrameMove2.png.meta
-        level: 4
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Sprites\Enemy\EnemFinalFrameMove2.png.meta
-          fullPath: C:\Users\catsu\ProjectArc\Assets\Sprites\Enemy\EnemFinalFrameMove2.png.meta
-          projectPath: Assets\Sprites\Enemy\EnemFinalFrameMove2.png.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Sprites\Enemy\EnemyFinal.png
-        label: EnemyFinal.png
-        level: 3
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Sprites\Enemy\EnemyFinal.png
-          fullPath: C:\Users\catsu\ProjectArc\Assets\Sprites\Enemy\EnemyFinal.png
-          projectPath: Assets\Sprites\Enemy\EnemyFinal.png
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Sprites\Enemy\EnemyFinal.png.meta
-        label: EnemyFinal.png.meta
-        level: 4
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Sprites\Enemy\EnemyFinal.png.meta
-          fullPath: C:\Users\catsu\ProjectArc\Assets\Sprites\Enemy\EnemyFinal.png.meta
-          projectPath: Assets\Sprites\Enemy\EnemyFinal.png.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Sprites\Enemy\EnemyFinalFrameMove1.png
-        label: EnemyFinalFrameMove1.png
-        level: 3
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Sprites\Enemy\EnemyFinalFrameMove1.png
-          fullPath: C:\Users\catsu\ProjectArc\Assets\Sprites\Enemy\EnemyFinalFrameMove1.png
-          projectPath: Assets\Sprites\Enemy\EnemyFinalFrameMove1.png
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Sprites\Enemy\EnemyFinalFrameMove1.png.meta
-        label: EnemyFinalFrameMove1.png.meta
-        level: 4
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Sprites\Enemy\EnemyFinalFrameMove1.png.meta
-          fullPath: C:\Users\catsu\ProjectArc\Assets\Sprites\Enemy\EnemyFinalFrameMove1.png.meta
-          projectPath: Assets\Sprites\Enemy\EnemyFinalFrameMove1.png.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Sprites\Enemy\EnemyFinalFrameMove3.png
-        label: EnemyFinalFrameMove3.png
-        level: 3
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Sprites\Enemy\EnemyFinalFrameMove3.png
-          fullPath: C:\Users\catsu\ProjectArc\Assets\Sprites\Enemy\EnemyFinalFrameMove3.png
-          projectPath: Assets\Sprites\Enemy\EnemyFinalFrameMove3.png
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Sprites\Enemy\EnemyFinalFrameMove3.png.meta
-        label: EnemyFinalFrameMove3.png.meta
-        level: 4
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Sprites\Enemy\EnemyFinalFrameMove3.png.meta
-          fullPath: C:\Users\catsu\ProjectArc\Assets\Sprites\Enemy\EnemyFinalFrameMove3.png.meta
-          projectPath: Assets\Sprites\Enemy\EnemyFinalFrameMove3.png.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
       - path: UserSettings
         label: UserSettings
         level: 0
@@ -2068,67 +1662,13 @@ MonoBehaviour:
           indexStatus: 0
           workTreeStatus: 0
     gitStatusEntries:
-    - path: Assets\Sprites\Enemy.meta
-      fullPath: C:\Users\catsu\ProjectArc\Assets\Sprites\Enemy.meta
-      projectPath: Assets\Sprites\Enemy.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Sprites\Enemy\EnemFinalFrameMove2.png
-      fullPath: C:\Users\catsu\ProjectArc\Assets\Sprites\Enemy\EnemFinalFrameMove2.png
-      projectPath: Assets\Sprites\Enemy\EnemFinalFrameMove2.png
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Sprites\Enemy\EnemFinalFrameMove2.png.meta
-      fullPath: C:\Users\catsu\ProjectArc\Assets\Sprites\Enemy\EnemFinalFrameMove2.png.meta
-      projectPath: Assets\Sprites\Enemy\EnemFinalFrameMove2.png.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Sprites\Enemy\EnemyFinal.png
-      fullPath: C:\Users\catsu\ProjectArc\Assets\Sprites\Enemy\EnemyFinal.png
-      projectPath: Assets\Sprites\Enemy\EnemyFinal.png
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Sprites\Enemy\EnemyFinal.png.meta
-      fullPath: C:\Users\catsu\ProjectArc\Assets\Sprites\Enemy\EnemyFinal.png.meta
-      projectPath: Assets\Sprites\Enemy\EnemyFinal.png.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Sprites\Enemy\EnemyFinalFrameMove1.png
-      fullPath: C:\Users\catsu\ProjectArc\Assets\Sprites\Enemy\EnemyFinalFrameMove1.png
-      projectPath: Assets\Sprites\Enemy\EnemyFinalFrameMove1.png
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Sprites\Enemy\EnemyFinalFrameMove1.png.meta
-      fullPath: C:\Users\catsu\ProjectArc\Assets\Sprites\Enemy\EnemyFinalFrameMove1.png.meta
-      projectPath: Assets\Sprites\Enemy\EnemyFinalFrameMove1.png.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Sprites\Enemy\EnemyFinalFrameMove3.png
-      fullPath: C:\Users\catsu\ProjectArc\Assets\Sprites\Enemy\EnemyFinalFrameMove3.png
-      projectPath: Assets\Sprites\Enemy\EnemyFinalFrameMove3.png
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Sprites\Enemy\EnemyFinalFrameMove3.png.meta
-      fullPath: C:\Users\catsu\ProjectArc\Assets\Sprites\Enemy\EnemyFinalFrameMove3.png.meta
-      projectPath: Assets\Sprites\Enemy\EnemyFinalFrameMove3.png.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
     - path: UserSettings\Layouts\default-6000.dwlt
       fullPath: C:\Users\catsu\ProjectArc\UserSettings\Layouts\default-6000.dwlt
       projectPath: UserSettings\Layouts\default-6000.dwlt
       originalPath: 
       indexStatus: 0
       workTreeStatus: 3
-    changedFilesText: 10 changed files
+    changedFilesText: 1 changed file
     lastCurrentBranchChangedEvent:
       updatedTimeString: 0001-01-01T00:00:00.000+00:00
       cacheType: 1
@@ -4849,13 +4389,13 @@ MonoBehaviour:
     m_Tooltip: Url of the origin remote
     m_TextWithWhitespace: "https://github.com/ProjectSeowon/ProjectArc\u200B"
   lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 2025-04-08T09:57:00.128-04:00
+    updatedTimeString: 2025-04-08T10:42:47.775-04:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2025-04-08T10:04:11.008-04:00
+    updatedTimeString: 2025-04-08T10:42:48.214-04:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2025-04-08T10:04:10.991-04:00
+    updatedTimeString: 2025-04-08T10:42:35.414-04:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
@@ -4879,6 +4419,6 @@ MonoBehaviour:
     m_TextWithWhitespace: "Fetch\u200B"
   repositoryProgressValue: 0
   repositoryProgressMessage: 
-  appManagerProgressValue: 1
+  appManagerProgressValue: 0.875
   appManagerProgressMessage: 
   primaryConnectionUsername: 
