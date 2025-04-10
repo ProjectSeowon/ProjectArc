@@ -25,6 +25,8 @@ public class GameManager : MonoBehaviour
     private VisualElement m_StartGame;
     private Label m_StartGameMessage;
     private Label m_Title;
+    private Label m_LevelLabel;
+    
 
     public TurnManager TurnManager {get; private set;}
 
@@ -71,7 +73,9 @@ public class GameManager : MonoBehaviour
         m_Title = UIDoc.rootVisualElement.Q<Label>("Title");
         m_Title.text = "ProjectArc";
         m_StartGameMessage.text = "Press Space to start game";
-
+        m_LevelLabel = UIDoc.rootVisualElement.Q<Label>("LevelLabel");
+        m_LevelLabel.text = "Level: " + m_CurLevel;
+        
         StartNewGame();
     }
 
@@ -147,13 +151,14 @@ public class GameManager : MonoBehaviour
         MapController.player = Player;
 
         m_CurLevel++;
+        m_LevelLabel.text = "Level: " + m_CurLevel;
     }
 
-    public void LoadFood(int UF){m_Food = UF;}
+    public void LoadFood(int UF){m_Food = UF; m_FoodLabel.text = "Food: " + m_Food / 2;}
 
-    public void LoadHP(int UH){m_HP = UH;}
+    public void LoadHP(int UH){m_HP = UH; m_HPLabel.text = "HP: " + m_HP / 2;}
 
-    public void LoadLevel(int UL){m_CurLevel = UL;}
+    public void LoadLevel(int UL){m_CurLevel = UL; m_LevelLabel.text = "Level: " + m_CurLevel;}
 
     void Update()
     {

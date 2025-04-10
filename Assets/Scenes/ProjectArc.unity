@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee1ccf673e9db714c9e927eff456aea5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Save: {fileID: 1096599581}
+  SaveState: {fileID: 1096599581}
   MapController: {fileID: 866884672}
   Player: {fileID: 273711291}
   UIDoc: {fileID: 1361543077}
@@ -678,11 +678,9 @@ MonoBehaviour:
   Width: 20
   Height: 10
   GroundTiles:
-  - {fileID: 11400000, guid: 82b1bdd5aa2ef7049a2d7d71e4db70c9, type: 2}
-  - {fileID: 11400000, guid: bf9fca6b570977e428fa1f2636e18fd4, type: 2}
+  - {fileID: 11400000, guid: 97930c8d49a2b664386fcceacab2ff17, type: 2}
   WallTiles:
-  - {fileID: 11400000, guid: 94c28a5b8af8b3243ae1f7c0f45790d0, type: 2}
-  - {fileID: 11400000, guid: 2c1fcb6a13a912b44826816cfee1c128, type: 2}
+  - {fileID: 11400000, guid: 0073ba75f539b8846b53976a7e177451, type: 2}
   player: {fileID: 273711291}
 --- !u!1 &1096599580
 GameObject:
@@ -713,8 +711,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8a444560ec91c4795924bf7d7f4f48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameManager: {fileID: 17695207}
-  Map: {fileID: 866884672}
 --- !u!4 &1096599582
 Transform:
   m_ObjectHideFlags: 0

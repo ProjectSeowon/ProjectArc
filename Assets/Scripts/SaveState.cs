@@ -9,7 +9,7 @@ public class SaveState : MonoBehaviour
         SaveData.Level = GameManager.GetLevel();
         SaveData.HP = GameManager.GetHP();
         SaveData.Food = GameManager.GetFood();
-        String json = JsonUtility.ToJson(SaveData);
+        string json = JsonUtility.ToJson(SaveData);
         string path = Application.persistentDataPath + "/save.json";
         System.IO.File.WriteAllText(path, json);
     }
@@ -21,7 +21,7 @@ public class SaveState : MonoBehaviour
         if (System.IO.File.Exists(path))
         {
             string json = System.IO.File.ReadAllText(path);
-            SaveData LoadedData = JsonUtility.FromJson<SaveData>(json);\
+            SaveData LoadedData = JsonUtility.FromJson<SaveData>(json);
             GameManager.LoadLevel(LoadedData.Level);
             GameManager.LoadHP(LoadedData.HP);
             GameManager.LoadFood(LoadedData.Food);
