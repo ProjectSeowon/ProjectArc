@@ -2,6 +2,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 public class SaveState : MonoBehaviour
 {    
+    int level;
     public void SaveGame()
     {
         GameManager GameManager = FindFirstObjectByType<GameManager>();
@@ -20,11 +21,15 @@ public class SaveState : MonoBehaviour
         string path = Application.persistentDataPath + "/save.json";
         if (System.IO.File.Exists(path))
         {
+            level = GameManager.GetLevel();
             string json = System.IO.File.ReadAllText(path);
             SaveData LoadedData = JsonUtility.FromJson<SaveData>(json);
-            GameManager.LoadLevel(LoadedData.Level);
-            GameManager.LoadHP(LoadedData.HP);
-            GameManager.LoadFood(LoadedData.Food);
+            if( level != LoadedData.Level)
+            {
+                GameManager.LoadLevel(LoadedData.Level);
+                GameManager.LoadHP(LoadedData.HP);
+                GameManager.LoadFood(LoadedData.Food);
+            }
         }else{
             Debug.LogWarning("No save file found!");
         }
