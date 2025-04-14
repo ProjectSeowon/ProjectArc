@@ -92,6 +92,10 @@ public class GameManager : MonoBehaviour
         m_CurLevel = 1;
         m_Food = 100;
         m_FoodLabel.text = "Food: " + m_Food / 2;
+        m_HP = 100;
+        m_HPLabel.text = "HP: " + m_HP / 2;
+        m_LevelLabel.text = "Level: " + m_CurLevel;
+
 
         
         Player.Init();
