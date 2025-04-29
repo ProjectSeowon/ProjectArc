@@ -133,7 +133,7 @@ public class GameManager : MonoBehaviour
             }
             
         }else if (m_Food < 0){
-            if (m_HP >= 200){
+            if (m_HP >= 100){
                 m_Food += a + 1;
                 m_FoodLabel.text = "Food: " + m_Food / 2;
             }else{

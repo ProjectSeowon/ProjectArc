@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3f5d17d87c1f3ef44b75938a5a0cf39e
+guid: 3f1e52ec1b4b06346bb548ba2408bf33
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6017476463300412359
-    second: SmallFood_0
+      213: 5729517594439484120
+    second: ExitTileFinal_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SmallFood_0
+      name: ExitTileFinal_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 25
-        width: 65
-        height: 65
+        x: 0
+        y: 0
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 93c74b0e901ad7ca0800000000000000
-      internalID: -6017476463300412359
+      spriteID: 8d28ae655e5538f40800000000000000
+      internalID: 5729517594439484120
       vertices: []
       indices: 
       edges: []

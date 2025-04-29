@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: DevWall2_0
+  m_Name: ExitTileFinal_0
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 3963954295648676762, guid: 215c0d82424b2a247a5f7a5abfe9bb78, type: 3}
+  m_Sprite: {fileID: 5729517594439484120, guid: 3f1e52ec1b4b06346bb548ba2408bf33, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

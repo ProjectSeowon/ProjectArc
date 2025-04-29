@@ -44,4 +44,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9ca7049ad8c59245852571ffac8a5a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EndTile: {fileID: 11400000, guid: 5d4ca17675c79e648b5c28f803d88bd5, type: 2}
+  EndTile: {fileID: 11400000, guid: 2da1ba5ab983ebf4eb94f647990b796a, type: 2}
